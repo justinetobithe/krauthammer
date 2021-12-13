@@ -1,0 +1,194 @@
+/* Test CSS */
+.text-small{
+  font-size: 11px;
+}
+.modal[aria-hidden="true"]{
+  display: none;
+}
+.gallery-container{
+  padding: 5px;
+  box-sizing: border-box;
+  display: table;
+  width: 100%;
+  border: 1px solid #c8c8c8;
+}
+.galley-list>li>a{
+  width: 100px;
+  height: 100px;
+}
+#gallery-tab-image .galley-list li.active{
+  border-color: #87b87f;
+  position: relative;
+}
+#gallery-tab-image .galley-list li.active::after{
+  background-color: rgba(135,184,127,0.5);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  content: "";
+}
+.gallery-list-btn-container{
+  border-style: dotted !important;
+  border-color: #c8c8c8 !important;
+}
+.gallery-list-btn-container .btn-gallery-add-item{
+  text-decoration: none !important;
+}
+
+.btn-gallery-add-item{
+  width: 100px !important;
+  height: 100px !important;
+  line-height: 100px !important;
+  text-align: center;
+  font-size: 30px;
+  color: #333333;
+}
+
+#gallery-tab-image{
+  height: 300px;
+  overflow-y: scroll;
+}
+
+#cms-custom-field-container textarea.value{
+  width: 100%;
+  max-width: 100%;
+  min-width: 100%;
+}
+
+#cms-custom-field-container .file-drop-zone{
+  position: absolute;
+  background-color: rgba(0,0,0,0.6);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  vertical-align: middle;
+  color: #ffffff;
+  font-size: 30px;
+  text-align: center;
+  padding-top: 100px;
+  font-weight: 900;
+}
+
+.cms-custom-field-main-container .active-title{
+  display: none;
+}
+.cms-custom-field-main-container.active .accordion-heading{
+  display: none;
+}
+.cms-custom-field-main-container.active .accordion-body.collapse{
+  height: auto !important;
+}
+.cms-custom-field-main-container.active .active-title{
+  display: block;
+}
+.cms-custom-field-main-container.active .detail{
+  display: none;
+}
+.cms-custom-field-main-container .cf-item-container{
+  padding: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ffffff;
+}
+.cms-custom-field-main-container .cf-main-item-container{
+  border: 1px solid #ffffff;
+}
+.cms-custom-field-main-container .cf-item-container:hover,
+.cms-custom-field-main-container .cf-main-item-container:hover{
+  border: 1px solid #000000;
+}
+.cms-custom-field-main-container.active .cf-item-container:hover,
+.cms-custom-field-main-container.active .cf-main-item-container:hover{
+  border: 1px solid #ffffff;
+}
+.cms-custom-field-main-container.active .cf-item-container,
+.cms-custom-field-main-container.active .cf-main-item-container{
+  padding: 0;
+}
+
+.cms-custom-field-container{
+  box-sizing: border-box;
+  padding: 2px;
+}
+.cms-custom-field-container .row-fluid{
+  margin-bottom: 5px;
+}
+  .cms-custom-field-container .row-fluid>div{
+    padding: 2px;
+    border: 1px solid #e4e6e9;
+    box-sizing: border-box;
+  }
+  .cms-custom-field-container.active .row-fluid>div{
+    border: none;
+  }
+.cms-custom-field-container .cms-controls{
+  box-sizing: border-box;
+  text-align: center;
+  border: 1px dotted #5090c1;
+  display: table;
+  width: 100%;
+}
+.cms-custom-field-container.active .cms-controls,
+.cms-custom-field-container.active .cms-content-remove{
+  display: none;
+}
+.cms-content-remove{
+  text-align: right;
+}
+.cms-custom-field-container.active .cms-custom-field-container .row-fluid>div{
+  padding: 0;
+}
+.cms-custom-field-container.active .accordion-inner,
+.cms-custom-field-container.active .accordion-group{
+  border: none;
+}
+.cms-custom-field-container.active .cms-cf-tools{
+  display: none;
+}
+
+.container-add-btn{
+  box-sizing: border-box;
+  padding: 10px;
+  text-align: center;
+  float: left;
+  width: 100%;
+  height: 100%;
+  text-decoration: none !important;
+  display: none;
+}
+.cms-custom-field-container .container-add-btn{
+  display: block;
+}
+
+.cms-cf-container .cms-cf-item{
+  width: 150px;
+  margin: 5px;
+}
+
+#cms-custom-field-container-options .list-inline{
+  list-style-type: none;
+}
+#cms-custom-field-container-options .list-inline li{
+  display: inline;
+}
+
+.tag-gallery-item>a.layout-1{
+  
+}
+.tag-gallery-item>a.layout-2 img{
+  height: 100%;
+  max-width: none;
+}
+.media-container{
+  border: 1px solid #F2F1ED;
+  padding: 10px;
+  box-sizing: border-box;
+  margin-top: 10px;
+}
+
+#modal-product-billing-period-global-subscription-detail .control-group{
+  margin-bottom: 0px;
+}

@@ -1,0 +1,25 @@
+User-agent: AhrefsBot
+Disallow: /
+User-agent: Alexibot
+Disallow: /
+User-agent: MJ12bot
+Disallow: /
+User-agent: SurveyBot
+Disallow: /
+User-agent: rogerbot
+Disallow: /
+User-agent: sitebot
+Disallow: /
+User-agent: exabot
+Disallow: /
+User-agent: ia_archiver
+Disallow: /
+User-agent: BLEXBot
+Disallow: /
+User-agent: YakazBot
+Disallow: /
+User-agent: proximic
+Disallow: /
+
+User-agent: * 
+Allow: /

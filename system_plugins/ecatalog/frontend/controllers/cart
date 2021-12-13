@@ -1,0 +1,13 @@
+<?php
+
+class Cart extends Controller {
+	function __construct() {
+		parent::__construct();
+		Session::set('ispage', 'product-cart');
+	}
+
+	function index($url = "") {
+		EcommerceManager::cart_action();
+		EcommerceManager::cart_page();
+	}
+}

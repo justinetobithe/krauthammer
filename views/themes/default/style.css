@@ -1,0 +1,67 @@
+input[type='text'].cms-form-control,
+input[type='password'].cms-form-control,
+input[type='email'].cms-form-control,
+textarea.cms-form-control {
+	width: 100%;
+	padding: 10px;
+}
+
+input[type='submit'].cms-form-control{
+	padding: 5px 50px;
+}
+
+.product-img{
+	max-width: 100%;
+	max-height: 350px;
+	padding: 5px;
+	background-color: #ffffff;
+	border: solid 1px #c6c6c6;
+}
+.product-cart-table{
+	width: 100%;
+}
+	.product-cart-table th,.product-cart-table td{
+		padding: 10px
+	}
+
+.full-width{
+	width: 100%;
+}
+
+
+ul.nav.navbar-nav>li>ul{
+}
+ul.nav.navbar-nav li>ul{
+	background-color: rgba(0,0,0,0.2);
+	list-style-type: none;
+	padding: 0;
+	display: none;
+	position: absolute;
+}
+ul.nav.navbar-nav li:hover>ul{
+	display: block;
+}
+	ul.nav.navbar-nav li>ul li{
+		margin-left: 10px;
+		padding: 10px;
+		position: relative;
+		width: 200px;
+	}
+	ul.nav.navbar-nav li>ul li>a{
+		padding: 10px;
+	}
+	ul.nav.navbar-nav li>ul li>ul{
+		position: absolute;
+		top: 0;
+		left: 100%;
+	}
+
+/*ul.nav.navbar-nav>li:hover>ul{
+	float: left;
+}*/
+
+@media only screen and (min-width: 1170px){
+	.navbar-custom.dark{
+
+	}
+}

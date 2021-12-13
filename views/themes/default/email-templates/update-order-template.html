@@ -1,0 +1,137 @@
+<html>
+    <body style='font-family:Arial,sans-serif;'>
+    <div>
+        <h2>{{system:company_name}} [Update Order]</h2>
+        <p>You order has been modified</p>
+        <p>Below is your modified order details:</p>
+    </div>
+    <table border='0' cellpadding='0' width='100%' style='padding: 10px;border: #000 solid 1px;'>
+    <tr>
+        <td colspan='2'>
+            <table border='0' cellpadding='3' width='100%' style='width:100%;border: #e0e0e0 solid 1px;'>
+                <tr>
+                    <td width='50%'>
+                        <h3 style='margin:0;'>{{system:company_name}}</h3> 
+                        <div>{{system:address}}</div>
+                        <div>Tel: {{system:company_contact_number}} / Fax: {{system:company_fax_number}}</div>
+                        <div>{{system:company_email}} | {{system:site_url}}</div>
+                    </td>
+                    <td width='50%'>
+                        <div>Business Reg. No.: {{system:business_registration_number}}</div>
+                        <div>GST No.: {{system:company_gst_number}}</div>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td colspan='2'>
+            <table border='0' cellpadding='3' width='100%' style='width:100%;border: #e0e0e0 solid 1px;'>
+                <tr>
+                    <td width='50%'>
+                        <table border='0' cellpadding='1' width='100%' style='width:100%;border: #e0e0e0 solid 1px;'>
+                            <tr>
+                                <td width='50%'>Order ID</td>
+                                <td width='50%'>: {{order:id}}</td>
+                            </tr>
+                            <tr>
+                                <td width='50%'>Invoice No.</td>
+                                <td width='50%'>: {{order:invoice_number}}</td>
+                            </tr>
+                            <tr>
+                                <td width='50%'>Name</td>
+                                <td width='50%'>: {{order:first_name}} {{order:last_name}}</td>
+                            </tr>
+                            <tr>
+                                <td width='50%'>Email</td>
+                                <td width='50%'>: {{order:email}}</td>
+                            </tr>
+                            <tr>
+                                <td width='50%'>1st Contact #</td>
+                                <td width='50%'>: {{order:phone}}</td>
+                            </tr>
+                            <tr>
+                                <td width='50%'>2nd Customer Name</td>
+                                <td width='50%'>: {{order:customer_name_2}}</td>
+                            </tr>
+                            <tr>
+                                <td width='50%'>2nd Contact Number</td>
+                                <td width='50%'>: {{order:customer_phone_2}}</td>
+                            </tr>
+                            <tr>
+                                <td width='50%'>Company</td>
+                                <td width='50%'>: {{order:customer_company_name}}</td>
+                            </tr>
+                            <tr>
+                                <td width='50%'>Billing Address</td>
+                                <td width='50%'>: {{order:billing_address}} {{order:billing_address_line_2}}</td>
+                            </tr>
+                            <tr>
+                                <td width='50%'>Billing Postal Code</td>
+                                <td width='50%'>: {{order:billing_postal}}</td>
+                            </tr>
+                            <tr>
+                                <td width='50%'><strong>Delivery Details</strong></td>
+                                <td width='50%'>&nbsp;</td>
+                            </tr>  <tr>
+                                <td width='50%'>Delivery Type</td>
+                                <td width='50%'>: {{order:delivery_type}}</td>
+                            </tr>  <tr>
+                                <td width='50%'>Collection Date</td>
+                                <td width='50%'>: {{order:delivery_date_2}}</td>
+                            </tr>
+                            <tr>
+                                <td width='50%'>Collection Time</td>
+                                <td width='50%'>: {{order:delivery_time_2}}</td>
+                            </tr>      <tr>
+                                <td width='50%'>Remarks</td>
+                                <td width='50%'>: {{order:message}}</td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td width='50%' valign='top'>
+                        <table border='0' cellpadding='1' width='100%'>
+                            <tr>
+                                <td style='border-bottom:#000 solid 2px;' width='50%' valign='top'>TOTAL AMOUNT</td>
+                                <td style='border-bottom:#000 solid 2px;' width='50%'><h2 style='margin-top:0;margin-bottom:5px;color:#d29707;'><sup>{{system:currency_symbol}}</sup> {{order:total}}</h2></td>
+                            </tr>
+                            <tr>
+                                <td style='border-bottom:#000 dotted 1px;' width='50%' valign='top'>GROSS TOTAL</td>
+                                <td style='border-bottom:#000 dotted 1px;' width='50%'><h4 style='margin-top:0;margin-bottom:5px;'><sup>{{system:currency_symbol}}</sup> {{order:total}}</h4></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td width='100%' style='padding-top:5px;border-bottom:#000 solid 2px;'>
+            <strong>Order Details</strong>
+        </td>
+    </tr>
+    <tr>
+        <td width='100%'>
+            <table border='0' cellpadding='0' width='100%'>
+                {{order-detail:order-detail}}  
+                {{order-additional:order-additional}}  
+                <tr>
+                    <td colspan='2' style='border-bottom:#000 dotted 1px;'>
+                        <strong style='color:#d29707;'>Remarks</strong>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan='2' style='border-bottom:#000 dotted 1px;'>
+                        this is a test order. do not process.
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    </table>
+    <div>
+    <br>
+    <a href='{{order:order_print_link}}' style='background-color:#d29707;border-color:#d29707;color: #fff;display: inline-block;padding: 6px 12px;margin-bottom: 0;font-size: 14px;font-weight: normal;line-height: 1.42857143;text-align: center;white-space: nowrap;vertical-align: middle;cursor: pointer;background-image: none;border: 1px solid transparent;border-radius: 4px;text-decoration: none;'>Print a copy</a>
+    </div>
+    </body>
+    </html>

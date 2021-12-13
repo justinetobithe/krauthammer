@@ -1,0 +1,27 @@
+<?php
+
+class Payment extends Controller {
+
+  function __construct() {
+    parent::__construct();
+  }
+
+  function index($url = "") {
+  	if (EcommerceManager::has_current_user()) {
+        $payment_methods = EcommerceManager::get_payment_getways();
+        EcommerceManager::payment_page( array( "payment_methods" => $payment_methods ) );
+  	}else{
+  		redirect(get_bloginfo('baseurl'));
+  	}
+  }
+
+  function success(){
+    include ROOT . "includes/paypal/express/process.php";
+    EcommerceManager::payment_process_order();
+    redirect( URL . "order/success/");
+  }
+
+  function paypal(){
+    include ROOT . "includes/paypal/express/process.php";
+  }
+}

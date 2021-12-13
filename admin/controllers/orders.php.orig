@@ -1,0 +1,116 @@
+<?php
+
+
+class Orders extends Controller{
+	function __construct(){
+		parent::__construct();
+	}
+    function index(){
+        Session::handleLogin();
+        $this->view->render('header');
+        $this->view->render('orders/index');
+        $this->view->render('footer');
+       
+    }
+    function view($order_id=""){
+      Session::handleLogin();
+      $order = $this->model->getOrdersbyID($order_id);
+      $this->view->set('order',$order);
+      $this->view->render('header');
+      $this->view->render('orders/view');
+      $this->view->render('footer');
+    }
+    function add(){
+        Session::handleLogin();
+        $this->view->render('header');
+        $this->view->render('orders/add');
+        $this->view->render('footer');
+    }
+   function edit($order_id="")
+   {
+        Session::handleLogin();
+        if($order_id == "" || $order_id < 0 || !ctype_digit($order_id) )
+            header('location:/ecatalog-system/admin/orders/');
+        else
+        {
+          $order = $this->model->getOrdersbyID($order_id);
+        
+          if($order['order_status'] == "trashed")
+            header('location:/ecatalog-system/admin/orders/');
+          else if(!$this->model->isExist($order_id))
+            header('location:/ecatalog-system/admin/orders/');
+          else
+          {
+            $this->view->set('order',$order);
+            $this->view->render('header');
+            $this->view->render('orders/edit');
+            $this->view->render('footer');
+          }
+        }
+
+      
+   }
+   
+   function get()
+   {
+        if(hasPost('action','getOrders'))
+            echo json_encode($this->model->getOrders());
+        else
+<<<<<<< HEAD
+           header('Location: '.URL.'/admin/orders/');
+=======
+           header('location:'.URL.'orders/');
+>>>>>>> 87ca4a5cbc341023fa0ec09c3aae79150b921ac9
+   }
+   function addOrders()
+   {
+
+    if($_POST){
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $contact_num = $_POST['contact_num'];
+    $message = $_POST['message'];
+
+    if($this->model->addOrders($name,$email,$contact_num,$message))
+        echo '1';
+    else
+        echo '0';
+    }
+    else
+       header('location:'.URL.'orders/');
+   }
+   function editOrder(){
+    
+    if($_POST){
+
+      $id = $_POST['id'];
+      $name = $_POST['name'];
+      $email = $_POST['email'];
+      $contact_num = $_POST['contact_num'];
+      $message = $_POST['message'];
+
+      if($this->model->editOrder($id,$name,$email,$contact_num,$message))
+          echo '1';
+      else
+          echo '2';
+    }
+    else
+       header('location:'.URL.'orders/');
+   }
+   function deleteOrder()
+   {
+    
+        if(hasPost('action', 'delete'))
+        {
+             $id = post('id');
+
+             if($this->model->deleteOrder($id))
+                echo json_encode("1");
+            else
+                echo json_encode("0");
+        }
+        else
+           header('location:'.URL.'orders/');;
+   }
+  
+}

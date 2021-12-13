@@ -1,0 +1,4059 @@
+/* BEGIN font enits */
+@font-face {
+  font-family: 'jost book italic';
+  src: url('../fonts/j-bi.eot');
+  src: local('Jost* BookItalic'), local('Jost-BookItalic'),
+    url('../fonts/j-bi.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/j-bi.woff') format('woff'),
+    url('../fonts/j-bi.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'jost medium';
+  src: url('../fonts/j-m.eot');
+  src: local('Jost* Medium'), local('Jost-Medium'),
+    url('../fonts/j-m.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/j-m.woff') format('woff'),
+    url('../fonts/j-m.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'jost semi';
+  src: url('../fonts/j-s.eot');
+  src: local('Jost* Semi'), local('Jost-Semi'),
+    url('../fonts/j-s.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/j-s.woff') format('woff'),
+    url('../fonts/j-s.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'jost book';
+  src: url('../fonts/j-b.eot');
+  src: local('Jost* Book'), local('Jost-Book'),
+    url('../fonts/j-b.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/j-b.woff') format('woff'),
+    url('../fonts/j-b.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'jost bold';
+  src: url('../fonts/j-bld.eot');
+  src: local('Jost Bold'), local('Jost-Bold'),
+    url('../fonts/j-bld.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/j-bld.woff') format('woff'),
+    url('../fonts/j-bld.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+/* END font inits */
+
+/* BEGIN font family theme */
+.theme .f_j_bi {
+  font-family: 'jost book italic';
+  font-weight: normal;
+  font-style: italic;
+}
+
+.theme .f_j_m {
+  font-family: 'jost medium';
+  font-weight: 500;
+  font-style: normal;
+}
+
+.theme .f_j_s {
+  font-family: 'jost semi';
+  font-weight: normal;
+  font-style: normal;
+}
+
+.theme .f_j_b {
+  font-family: 'jost book';
+  font-weight: normal;
+  font-style: normal;
+}
+
+.theme .f_j_bld {
+  font-family: 'jost bold';
+  font-weight: bold;
+  font-style: normal;
+}
+/* END font family theme */
+
+/* BEGIN font size */
+.theme .t12 {
+  font-size: 12px;
+}
+
+.theme .t14 {
+  font-size: 14px;
+}
+
+.theme .t16 {
+  font-size: 16px;
+}
+
+.theme .t18 {
+  font-size: 18px;
+}
+
+.theme .t20 {
+  font-size: 20px;
+}
+
+.theme .t24 {
+  font-size: 24px;
+}
+
+.theme .t32 {
+  font-size: 32px;
+}
+
+.theme .t36 {
+  font-size: 36px;
+}
+
+.theme .t40 {
+  font-size: 40px;
+}
+
+.theme .t50 {
+  font-size: 50px;
+}
+/* END font size */
+
+/* BEGIN color names */
+.theme .c_fff {
+  color: #fff;
+}
+
+.theme .c_b7b7b7 {
+  color: #b7b7b7;
+}
+
+.theme .c_008ece {
+  color: #008ece;
+}
+
+.theme .c_c3c3c3 {
+  color: #c3c3c3;
+}
+
+.theme .c_222 {
+  color: rgb(34, 34, 34);
+}
+
+.theme .c_008ece {
+  color: #008ece;
+}
+
+.theme .c_2a7db1 {
+  color: #2a7db1;
+}
+
+.theme .c_141515 {
+  color: #141515;
+}
+
+.theme .c_b7b7b7 {
+  color: #b7b7b7;
+}
+
+.theme .c_0067da {
+  color: #0067da;
+}
+/* END color names */
+
+/* BEGIN background color */
+.theme .b_fff {
+  background: #fff;
+}
+
+.theme .b_122947 {
+  background: #122947;
+}
+
+.theme .b_f9f9f9 {
+  background: #f9f9f9;
+}
+
+.theme .b_122947 {
+  background: #122947;
+}
+/* END background color */
+
+/* Begin Line height */
+.theme .line-height-1 {
+    line-height: 1;
+}
+
+.theme .line-height-half {
+    line-height: 1.5;
+}
+
+.theme .line-height-2 {
+    line-height: 2;
+}
+/* END of Line height */
+
+
+/* BEGIN theme fields placeholder text*/
+.theme .field::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: rgba(34, 34, 34, .5);
+}
+
+.theme .field::-moz-placeholder { /* Firefox 19+ */
+  color: rgba(34, 34, 34, .5);
+}
+
+.theme .field::-ms-input-placeholder { /* IE 10+ */
+  color: rgba(34, 34, 34, .5);
+}
+
+.theme .field::-moz-placeholder { /* Firefox 18- */
+  color: rgba(34, 34, 34, .5);
+}
+/* END theme fields placeholder text*/
+
+/* BEGIN general link hover */
+.theme .link:hover,
+.theme .link:focus,
+.theme .link:active {
+  color: #008ece;
+}
+/* END genera link hover */
+
+/* BEGIN header */
+.theme header {
+  background: #fff;
+  position: fixed;
+  top: 0px;
+}
+
+.theme header .navbar {
+  padding: 15px;
+}
+
+.theme header .navbar-toggler {
+  padding: 10px 0px 10px 10px;
+  color: #008ece;
+}
+
+.theme header .navbar-toggler:hover,
+.theme header .navbar-toggler:focus,
+.theme header .navbar-toggler:active {
+  color: #222;
+}
+
+.theme header .navbar-collapse.show .nav-link:hover,
+.theme header .navbar-collapse.show .nav-link:focus,
+.theme header .navbar-collapse.show .nav-link:active {
+  color: #222;
+}
+/* END header */
+
+/* BEGIN header blw */
+.theme .header.sps--blw {
+  background: #f9f9f9;
+}
+
+.theme .header.sps--blw .navbar {
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+
+ .theme .header .navbar-nav .dropdown .dropdown-menu {
+        border: transparent;
+    }
+/* END header blw */
+
+/* BEGIN footer */
+.theme footer .columns {
+  padding-bottom: 25px;
+  padding-top: 25px;
+}
+
+.theme footer .columns:first-of-type {
+  padding-top: 50px;
+}
+
+.theme footer .columns:last-of-type {
+  padding-bottom: 50px;
+}
+
+.theme footer .title {
+  margin-bottom: 10px;
+}
+
+
+.theme footer .copyright .col-12 {
+  padding-bottom: 25px;
+}
+/* END footer */
+
+/* BEGIN home banner */
+.theme .forcefullwidth_wrapper_tp_banner,
+.theme .banner .rev_slider {
+  height: 100vh !important;
+}
+
+.theme .banner .block {
+  background: rgba(255, 255, 255, .5);
+  padding: 20px;
+}
+
+.theme .banner .title {
+  margin-bottom: 25px;
+}
+
+.theme .banner p {
+  margin-bottom: 15px;
+}
+
+.theme .banner .btn-discover,
+.theme .contactbanner .btn-discover {
+  border: 1px solid #008ece;
+  background: #008ece;
+  padding: 15px;
+}
+
+.theme .banner .btn-discover:hover,
+.theme .banner .btn-discover:focus,
+.theme .banner .btn-discover:active, 
+.theme .contactbanner .btn-discover:hover,
+.theme .contactbanner .btn-discover:focus,
+.theme .contactbanner .btn-discover:active {
+  background: #fff;
+  color: #008ece;
+}
+
+.theme .banner .btn-watch:hover,
+.theme .banner .btn-watch:focus,
+.theme .banner .btn-watch:active {
+  color: #222;
+}
+
+.theme .banner .tp-revslider-mainul .tp-revslider-slidesli .slotholder:first-of-type {
+  display: block;
+}
+
+.theme .banner .tp-revslider-mainul .tp-revslider-slidesli .slotholder:nth-of-type(2) {
+  display: none;
+}
+/* END home banner */
+
+/* BEGIN what we offer */
+
+.theme .header .navbar-nav .dropdown .btn {
+    border: 0px #f9f9f9;
+    background-color: transparent;
+}
+
+.theme .what-we-offer .heading p {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.theme .what-we-offer .row:last-of-type {
+  padding-bottom: 85px;
+}
+
+.theme .what-we-offer .heading .col-12 {
+  padding-bottom: 20px;
+  padding-top: 50px;
+}
+
+.theme .what-we-offer .item:not(:last-of-type) {
+  margin-bottom: 90px;
+}
+
+.theme .what-we-offer .title {
+  margin-bottom: 15px;
+}
+
+
+.theme .what-we-offer .block {
+  /*! min-height: 100%; */
+  min-width: 100%;
+  height: auto;
+  width: 100%;
+}
+
+.theme .what-we-offer .block img {
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);
+  border: 2px solid transparent;
+  /*filter: brightness(1);*/
+  filter: brightness(3.5);
+  min-height: 100%;
+  min-width: 100%;
+  height: auto; 
+}
+ 
+ 
+.theme .what-we-offer .block:hover img,
+.theme .what-we-offer .block:hover img,
+.theme .what-we-offer .block:hover img {  
+  border: 2px solid #008ece;
+  filter:none;
+}
+
+.theme .what-we-offer .text-block {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0px;
+}
+
+.theme .what-we-offer .text-block .subtitle {
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);
+  left: calc(50% - 130px);
+  bottom: calc(0% - 35px);
+  letter-spacing: 1px;
+  position: absolute;
+  border-radius: 5px;
+  padding: 15px 10px;
+  background: #fff;
+  width: 260px;
+  height: 70px;
+  color: #222;
+}
+
+.theme .what-we-offer .text-block p,
+.theme .what-we-offer .text-block .link {
+  display: none;
+}
+
+.theme .what-we-offer .link {
+  display: inline-block;
+  letter-spacing: 1px;
+  width: 100%;
+}
+
+.theme .what-we-offer .link i {
+  padding-left: 5px;
+}
+
+.theme .what-we-offer .block:hover .subtitle,
+.theme .what-we-offer .block:focus .subtitle,
+.theme .what-we-offer .block:active .subtitle {
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0);
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0);
+  bottom: calc(50% + 70px);
+  background: transparent;
+  padding: 30px 25px 0px;
+  font-size: 20px;
+  color: #fff;
+}
+
+.theme .what-we-offer .block:hover p,
+.theme .what-we-offer .block:focus p,
+.theme .what-we-offer .block:active p {
+  width: calc(100% - 5px);
+  top: calc(50% - 45px);
+  position: absolute;
+  padding: 0px 25px;
+  display: block;
+}
+
+.theme .what-we-offer .block:hover .link,
+.theme .what-we-offer .block:focus .link,
+.theme .what-we-offer .block:active .link {
+  top: calc(50% + 90px);
+  position: absolute;
+  padding: 0px 25px;
+  display: block;
+  width: 100%;
+}
+
+.theme .what-we-offer .block .link:hover,
+.theme .what-we-offer .block .link:focus,
+.theme .what-we-offer .block .link:active {
+  color: #fff;
+}
+/* END what we offer */
+ 
+
+/* BEGIN why choose us */
+.theme .why-choose-us {
+  padding-bottom: 50px;
+}
+
+.theme .why-choose-us .title {
+  margin-bottom: 40px;
+}
+
+.theme .why-choose-us p {
+  margin-bottom: 30px;
+}
+
+.theme .why-choose-us .link {
+  border: 1px solid #008ece;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  padding: 12px 25px;
+}
+
+.theme .why-choose-us .link:hover,
+.theme .why-choose-us .link:focus,
+.theme .why-choose-us .link:active {
+  background: #008ece;
+  color: #fff;
+}
+
+.theme .why-choose-us .right {
+  margin-top: 50px;
+}
+
+.theme .why-choose-us-body .training .row .left {
+  margin-bottom: 80px;
+}
+/* END why chose us */
+
+/* Begin Client Cases */
+.theme .client-cases .body .col-12 {
+  margin-top: 100px;
+}
+
+.theme .client-cases {
+  overflow: hidden;
+  padding: 0px;
+}
+
+.theme .client-cases .container {
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.theme .client-cases .tab-content {
+  margin-left: calc(50% - 200px);
+  padding: 0px;
+  width: 400px;
+}
+
+.theme .client-cases .title {
+  margin-bottom: 15px;
+}
+
+.theme .client-cases .nav-tabs {
+  margin-bottom: 20px;
+  border: 0px;
+}
+
+.theme .client-cases .nav-tabs .nav-link {
+  background: transparent;
+  border: 0px;
+}
+
+.theme .client-cases .nav-tabs .nav-link:hover,
+.theme .client-cases .nav-tabs .nav-link:focus,
+.theme .client-cases .nav-tabs .nav-link:active,
+.theme .client-cases .nav-tabs .nav-link.active {
+  text-decoration: underline;
+  color: #008ece;
+}
+/* End of Client Cases */
+
+/* BEGIN get in touch */
+.theme .get-in-touch .container {
+  padding-bottom: 35px;
+  padding-top: 100px;
+}
+
+.theme .get-in-touch .intro .title {
+  margin-bottom: 15px;
+}
+
+.theme .get-in-touch .intro {
+  margin: 0px auto 40px;
+}
+
+.theme .get-in-touch .intro + .row {
+  margin: 0px auto;
+}
+
+.theme .contactform .white-block .g-recaptcha,
+.theme .get-in-touch .white-block .g-recaptcha {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.theme .get-in-touch .white-block {
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.14);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.14);
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.14);
+  border-radius: 5px;
+  padding: 30px 15px;
+}
+
+.theme .get-in-touch .white-block .col-12:not(:last-of-type) {
+  margin-bottom: 10px;
+}
+
+.theme .get-in-touch .field {
+  background: #ececec;
+  height: 40px;
+  border: 0px;
+}
+
+.theme .get-in-touch textarea.field {
+  height: 110px;
+}
+
+.theme .get-in-touch .btn {
+  border: 1px solid #008ece;
+  background: #008ece;
+  display: inline;
+  height: 40px;
+  width: 100%;
+}
+
+.theme .get-in-touch .btn:hover,
+.theme .get-in-touch .btn:focus,
+.theme .get-in-touch .btn:active {
+  border: 1px solid #008ece;
+  background: #fff;
+  color: #008ece;
+}
+/* END get in touch */
+
+/* BEGIN subscribe */
+.theme .subscribe {
+  margin-top: 50px;
+}
+
+.theme .subscribe .blue_block {
+  padding: 35px 20px;
+  border-radius: 5px;
+  height: auto;
+}
+
+.theme .subscribe .title {
+  margin-bottom: 15px;
+}
+
+.theme .subscribe p {
+  margin-bottom: 25px;
+}
+
+.theme .subscribe .field {
+  background: rgba(236, 236, 236, .36);
+  margin-bottom: 5px;
+  height: 40px;
+  border: 0px;
+  color: #fff;
+}
+
+.theme .subscribe .field::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: rgba(255, 255, 255, .5);
+}
+
+.theme .subscribe .field::-moz-placeholder { /* Firefox 19+ */
+  color: rgba(255, 255, 255, .5);
+}
+
+.theme .subscribe .field::-ms-input-placeholder { /* IE 10+ */
+  color: rgba(255, 255, 255, .5);
+}
+
+.theme .subscribe .field::-moz-placeholder { /* Firefox 18- */
+  color: rgba(255, 255, 255, .5);
+}
+
+.theme .subscribe .btn {
+  border: 1px solid #008ece;
+  background: #008ece;
+  display: inline;
+  height: 40px;
+  width: 100%;
+}
+
+.theme .subscribe .btn:hover,
+.theme .subscribe .btn:focus,
+.theme .subscribe .btn:active {
+  border: 1px solid #008ece;
+  background: #fff;
+  color: #008ece;
+}
+/* END subscribe */
+
+/*Begin Video Global*/
+.theme .video {
+    margin-left: 1px;
+    margin-right: 1px;
+}
+/*End of Video Global*/
+
+/* BEGIN client cases page content */
+.theme .client-cases.page-content .container {
+  margin-top: 80px;
+}
+
+.theme .client-cases.page-content .intro {
+  display: none;
+}
+
+.theme .client-cases.page-content .tab-content {
+  margin-left: auto;
+  padding: 0px 5px;
+  width: auto;
+}
+
+.theme .client-cases.page-content .tab-content .carousel-item .col-6 {
+  margin-bottom: 20px; 
+}
+
+.theme .client-cases.page-content .tab-content .carousel-item .col-6:nth-child(even) {
+  padding-left: 5px;
+}
+
+.theme .client-cases.page-content .tab-content .carousel-item .col-6:nth-child(odd) {
+  padding-right: 5px;
+}
+
+.theme .client-cases.page-content .tab-content .carousel-item .col-6:nth-last-of-type(2),
+.theme .client-cases.page-content .tab-content .carousel-item .col-6:last-of-type {
+  margin-bottom: 0px;
+}
+
+.theme .client-cases.page-content .tab-content .carousel-item .block {
+  -webkit-box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.16);
+  -moz-box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.16);
+  box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.16);
+  padding: 10px;
+  height: 120px;
+  width: 120px;
+  margin: 3px;
+}
+/* END client cases page content */
+
+
+/* Begin About Us */
+
+.theme .about-us-banner {
+  background: url('../images/about-us/about-us-banner-mobile-bg.png') no-repeat center center;
+  background-size: calc(100% + 85px);
+  background-position: center center;
+  height: 500px;
+}
+
+.theme .about-us-banner p {
+  margin-top: 15px;
+}
+
+
+.theme .university .container .video {
+    background-color: black; 
+}
+
+.theme .section-about .container .video {
+    background-color: black;
+    overflow: hidden;
+}
+
+.theme .section-about .container .video .vp-center .player {
+    max-width: calc(235.294vh);
+    height: calc(70.5vw);
+}
+/* End of About Us */
+
+/* BEGIN section about */
+.theme .section-about .container {
+  padding-bottom: 50px;
+}
+
+.theme .section-about p {
+  margin-bottom: 30px;
+}
+
+.theme .section-about .video iframe {
+  min-height: 200px;
+  width: inherit;
+}
+/* END section about */
+
+/* BEGIN achievements */
+.theme .achievements .container {
+  margin-bottom: 50px;
+}
+
+.theme .achievements .block {
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.14);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.14);
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.14);
+  padding-bottom: 20px;
+  border-radius: 5px;
+  padding-top: 20px;
+}
+
+.theme .achievements .col-6:first-of-type,
+.theme .achievements .col-6:nth-of-type(2) {
+  margin-bottom: 20px;
+}
+
+.theme .achievements .number,
+.theme .achievements p {
+  display: inline-block;
+  width: 100%;
+}
+/* END achievements */
+
+/* BEGIN calltoact */
+.theme .call-to-act {
+  background: url('../../assets/images/call-to-act-bg.png') no-repeat center center;
+  background-size: cover;
+}
+
+.theme .call-to-act .container {
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+
+.theme .call-to-act .title {
+  margin-bottom: 15px;
+}
+
+.theme .call-to-act p {
+  margin-bottom: 20px;
+}
+
+.theme .call-to-act .btn {
+  border: 1px solid #008ece;
+  background: #008ece;
+  display: inline;
+  height: 40px;
+  width: 100%;
+}
+
+.theme .call-to-act .btn:hover,
+.theme .call-to-act .btn:focus,
+.theme .call-to-act .btn:active {
+  border: 1px solid #008ece;
+  background: #fff;
+  color: #008ece;
+}
+/* END calltoact */
+
+/* BEGIN university */
+.theme .university .container {
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+
+.theme .university iframe {
+  width: 100%;
+}
+/* END university */
+
+/* BEGIN values */
+.theme .values {
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+
+.theme .values .intro {
+  margin-bottom: 55px;
+}
+
+.theme .values .title {
+  margin-bottom: 20px;
+}
+
+.theme .values .list li {
+  margin-right: 0px;
+}
+
+.theme .values .list li:not(:last-of-type) {
+  margin-bottom: 25px;
+}
+
+.theme .values .list li:before {
+  font-family: "Font Awesome 5 Free"; 
+  margin-right: 20px;
+  font-weight: 900; 
+  content: "\f00c";
+  color: #008ece;
+}
+
+.theme .values .list .block {
+  width: calc(100% - 50px);
+}
+
+.theme .values .list .subtitle {
+  margin-bottom: 15px;
+}
+
+/* END values */
+
+/* BEGIN get in touch white background */
+.theme .get-in-touch.in-touch-white {
+  background: #fff;
+}
+/* END get in touch white background */
+
+/* BEGIN Why Choose Us */
+
+
+.theme .why-choose-us-body .why-choose-us-banner {
+  background: url('../images/why-choose-us/why-choose-us-banner-mobile-bg.png') no-repeat center center;
+  background-size: calc(100% + 85px);
+  background-position: center center;
+  height: 710px;
+}
+
+/* .theme .why-choose-us-body .why-choose-us-banner {
+  background: url('../../assets/images/why-choose-us-bg.png') no-repeat center center;
+  background-position: calc(50% + 350px) center;
+  background-size: cover;
+  margin-bottom: 0px;
+  height: auto;
+} */
+
+.theme .why-choose-us-body .why-choose-us-banner .container {
+  padding-bottom: 100px;
+  padding-top: 50px;
+}
+/* END of Why Choose Us*/
+
+/* BEGIN consultant */
+.theme .consultant .container {
+  margin-bottom: 50px;
+}
+
+.theme .consultant .title {
+  margin-bottom: 15px;
+}
+
+.theme .consultant p:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.theme .consultant .right {
+  display: none;
+}
+/* END consultant */
+
+/* BEGIN impact */
+.theme .impact {
+  background: url('../../assets/images/blue-pattern-bg.png') no-repeat center top;
+  background-size: auto 250px;
+}
+
+.theme .impact .container {
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+
+.theme .impact .title {
+  margin-bottom: 40px;
+}
+
+
+
+.theme .impact p:not(:last-of-type) {
+  margin-bottom: 15px;
+}
+
+.theme .impact .video {
+  margin-bottom: 30px;
+}
+
+.theme .impact .video iframe {
+  width: 100%;
+}
+
+.theme .impact .right {
+  margin-bottom: 20px;
+}
+
+.theme .impact .right img {
+  margin: 0px auto;
+  display: block;
+}
+/* END impact */
+
+/* BEGIN training */
+.theme .training .right {
+  margin-bottom: 30px;
+}
+
+.theme .training .title {
+  margin-bottom: 15px;
+}
+
+
+
+.theme .training p:not(last-of-type) {
+  margin-bottom: 15px;
+}
+
+.theme .training .right img {
+  margin: 0px auto;
+  display: block;
+}
+/* END training */
+
+/* BEGIN innovation */
+.theme .innovation {
+  background: url('../../assets/images/blue-pattern-bg.png') no-repeat center top;
+  background-size: auto 250px;
+}
+
+.theme .innovation .container {
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+
+.theme .innovation .title {
+  margin-bottom: 40px;
+}
+
+
+.theme .innovation p:not(:last-of-type) {
+  margin-bottom: 15px;
+}
+
+.theme .innovation .video {
+  margin-bottom: 30px;
+}
+
+.theme .innovation .video iframe {
+  width: 100%;
+}
+
+.theme .innovation .right {
+  margin-bottom: 20px;
+}
+
+.theme .innovation .right img {
+  margin: 0px auto;
+  display: block;
+}
+/* END innovation */
+
+
+/* BEGIN why choose us client cases */
+.theme .why-choose-us-body .why-choose-us-banner h1 {
+  margin-bottom: 30px;
+}
+.theme .why-choose-us-body .client-cases {
+  background: #f9f9f9;
+  margin-top: 0px;
+}
+/* END why choose us client cases */
+
+/* BEGIN why choose us get in touch */
+.theme .why-choose-us-body .get-in-touch .container {
+  padding-top: 50px;
+}
+
+
+
+/* END why choose us get in touch */
+
+
+
+/* Begin Contact Us*/
+
+.theme .contact-us-banner {
+  background: url('../images/contacts/contact-us-banner-mobile-bg.png') no-repeat center center; 
+  background-size: calc(100% + 85px);
+  background-position: center center;
+  height: 100% ;
+  margin-top: 90px;
+} 
+
+
+
+.theme .contact-us-banner .left h4 {
+  margin-bottom: 10px;
+}
+
+.theme .contact-us-banner .left p {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.theme .contact-us-banner .btn {
+  border: 1px solid #008ece;
+  background: #008ece;
+  height: 40px;
+  width: 200px; 
+  left: calc(50% - 100px);
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.theme .contact-us-banner .btn:hover, 
+.theme .contact-us-banner .btn:focus, 
+.theme .contact-us-banner .btn:active {
+  border: 1px solid #008ece;
+  background: #fff;
+  color: #008ece;
+}
+ 
+ .theme .contact-us-banner .right {
+  margin-top: 50px;
+ }
+
+ .theme .contact-us-banner .right h5 {
+  margin-top: 10px;
+ }
+
+ .theme .contact-us-banner .right .row {
+  margin-top: 40px;
+  margin-bottom: 50px;
+ }
+
+ .theme .contactform .right h4,
+ .theme .contactform .right p {
+   margin-bottom: 20px;
+ }
+
+.theme .contact .form-text {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.theme .contactform .businesstitle {
+  margin-bottom: 30px;
+}
+
+
+.theme .contactform .box .time {
+  float: right;
+}
+
+.theme .contactform .container {
+  padding-bottom: 35px;
+  padding-top: 100px;
+}
+
+.theme .contactform .intro .title {
+  margin-bottom: 15px;
+}
+
+.theme .contactform .intro {
+  margin: 0px auto 40px;
+}
+
+.theme .contactform .intro + .row {
+  margin: 0px auto;
+}
+
+.theme .contactform .white-block {
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.14);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.14);
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.14);
+  border-radius: 5px;
+  padding: 30px 15px;
+}
+
+.theme .contactform .white-block .col-12:not(:last-of-type) {
+  margin-bottom: 10px;
+}
+
+.theme .contactform .field {
+  background: #ececec;
+  height: 40px;
+  border: 0px;
+}
+
+.theme .contactform textarea.field {
+  height: 110px;
+}
+
+.theme .contactform .btn {
+  border: 1px solid #008ece;
+  background: #008ece;
+  display: inline;
+  height: 40px;
+  width: 100%;
+}
+
+.theme .contactform .business-hours {
+  display: none;
+}
+ 
+.theme .contact-us-banner .row .right .row .col-12 {
+  margin-bottom: 20px;
+}
+
+.theme .contact-us-banner .row .right .row .col-12:nth-of-type(2) {
+  margin-bottom: 50px;
+}
+
+/* End of Contact Us */
+
+
+/* BEGIN Publications */
+.theme .publication-banner {
+  background: url('../images/publications/publications-banner-mobile-bg.png') no-repeat center center;
+  background-size: calc(100% + 85px);
+  background-position: center center;
+  height: 550px;
+}
+
+.theme .publication-body .white-block {
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.14);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.14);
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.14);
+  border-radius: 5px;
+  padding: 30px 15px;
+}
+
+.theme .publication-body .white-block {
+  padding: 45px 15px;
+}
+ 
+.theme .publication-body {
+  overflow: hidden;
+  padding: 0px;
+}
+
+.theme .publication-body .container {
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.theme .publication-body .tab-content {
+  margin-left: calc(50% - 200px);
+  padding: 0px;
+  width: 400px;
+}
+
+.theme .publication-body .title {
+  margin-bottom: 20px;
+}
+
+.theme .publication-body .sub-title {
+  margin-bottom: 30px;
+}
+
+.theme .publication-body .nav-tabs {
+  margin-bottom: 20px;
+  border: 0px;
+}
+
+.theme .publication-body .nav-tabs .nav-link {
+  background: transparent;
+  border: 0px;
+}
+
+.theme .publication-body .nav-tabs .nav-link:hover,
+.theme .publication-body .nav-tabs .nav-link:focus,
+.theme .publication-body .nav-tabs .nav-link:active,
+.theme .publication-body .nav-tabs .nav-link.active {
+  text-decoration: underline;
+  color: #008ece;
+}  
+ 
+
+.theme .client-cases .field {
+  background: #ececec;
+  height: 40px;
+  border: 0px;
+}
+
+  .theme .client-cases .white-block .col-12:first-of-type,
+  .theme .client-cases .white-block .col-12:nth-of-type(3) {
+    padding-right: 5px;
+  }
+
+  .theme .client-cases .white-block .col-12:nth-of-type(2),
+  .theme .client-cases .white-block .col-12:nth-of-type(4) {
+    padding-left: 5px;
+  }
+
+  .theme .publication-body .body .col-12 {
+    margin-bottom: 50px;
+  }
+ 
+  .theme .publication-body .body .white-block .text-block {
+    width: 100%;
+    margin-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+ 
+  .theme .publication-body .body .white-block li {
+    margin-top: 15x;
+    margin-bottom: 15px;
+  }
+
+  .theme .publication-body .body .white-block h4 {  
+    margin-bottom: 25px; 
+  }
+   
+  .theme .pagination .pagination__item a {
+    border: 1px solid transparent;  
+    padding-left: 15px;
+    padding-right: 15px; 
+    padding-top: 8px;
+    padding-bottom: 8px; 
+    border-radius: 3px;
+    margin-left: 5px;
+    margin-right: 5px; 
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: #008ece; 
+    
+    font-family: 'jost semi';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 16;
+  }
+  
+  .theme .pagination .pagination__item span{
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 8px;
+    padding-bottom: 8px; 
+    border-radius: 3px;
+    margin-left: 5px;
+    margin-right: 5px; 
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: white;
+    border: 1px solid white;
+    background-color: #008ece; 
+    
+    font-family: 'jost semi';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 16;
+  }
+
+  .theme .pagination .pagination__item a:focus,
+  .theme .pagination .pagination__item a:hover,
+  .theme .pagination .pagination__item a:active {
+    border: 1px solid #008ece;
+    background-color: white; 
+    color: #008ece;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 8px;
+    padding-bottom: 8px; 
+  }
+   
+  .theme .publication-body .body .col-12 .white-block .w-100 {
+      overflow: hidden;
+      height: 240px;
+  }
+  
+  .theme .publication-body .body .col-12 .white-block iframe {
+      background-color: black;
+  }
+  
+  .theme .publication-body .body .col-12 .white-block .w-100 img {
+      
+      
+      transform: translate(-50%, -50%);
+      position: absolute;
+      min-width: 100%;
+      height: 100%;
+      width: auto;
+      left: 50%;
+      top: 50%;
+  }
+  
+  /*.theme .publication-body ul.pagination li:first-of-type a:after {*/
+  /*    font-family: "Font Awesome 5 Free"; */
+  /*    font-weight: 900; */
+  /*    content: "\f053";*/
+  /*    color: #008ece;*/
+  /*}*/ 
+  
+  .theme .publication-body .body .col-12 .white-block .block {
+      border-radius: 4px;
+  }
+  
+   .theme .pagination .pagination__item svg {
+       display:none;
+   }
+  
+  .theme .pagination li:last-of-type a:before {
+      font-family: "Font Awesome 5 Free"; 
+      font-weight: 900; 
+      content: "\f054";
+      color: #008ece;
+  }
+  
+  .theme .pagination li:first-of-type a:before {
+      font-family: "Font Awesome 5 Free"; 
+      font-weight: 900; 
+      content: "\f053";
+      color: #008ece;
+  }
+  
+  .theme .publication-body .body .col-12 .white-block .w-100 {
+      position: relative;
+  }
+  
+  .theme .publication-body .body .post-wrapper {
+    flex-direction: column;
+    display: flex; 
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.14);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.14);
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.14);
+    border-radius: 5px;
+    padding: 30px 15px;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 100%;
+    
+    /*align-items:center;*/
+    /*justify-content: center;*/
+    /*padding: 0px*/ 
+    padding-left: 20px;
+    padding-right: 20px;
+  }  
+  
+  .theme .publication-body .body .post-wrapper .section-intro {
+     order: 3;
+     margin-bottom: 20px;
+  }
+  
+  .theme .publication-body .body .post-wrapper .link-hover-theme {
+    font-family: 'jost semi';
+    font-weight: normal;
+    font-style: normal; 
+    font-size: 20px; 
+    color: #222 
+  }
+  
+  .theme .publication-body .body .post-wrapper p {
+      font-family: 'jost medium';
+      font-weight: 500;
+      font-style: normal;
+      font-size: 14px;
+      color: #c3c3c3;
+      text-align: left;
+      order: 2;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+  }
+  
+  .theme .publication-body .body .post-wrapper .strong {
+      font-family: 'jost medium';
+      font-weight: 500;
+      font-style: normal;
+      color: #008ece;
+      font-size: 16px;
+      text-transform: lowercase;
+  }
+  .theme .publication-body .body .post-wrapper .clear p {
+      font-family: 'jost book';
+      font-weight: normal;
+      font-style: normal;
+      font-size: 16px;
+      color: #222;
+      text-align: left;
+      line-height: 2;
+      text-transform: lowercase;
+      margin-bottom: 20px;
+      order: 4;
+  }
+   
+  
+  .theme .publication-body .body .post-wrapper .clear .featured-image { 
+      order: 1;
+      width: 100%;
+      padding: 0px;
+      overflow: hidden;
+  }
+  
+  .theme .publication-body .body .post-wrapper .clear .featured-image img { 
+      display: block!important;
+      margin-left: auto!important;
+      margin-right: auto!important;
+      border-radius: .25rem!important;
+      max-width: 100%;
+      height: auto;
+  }
+  
+  .theme .publication-body .body .post-wrapper .clear a {
+      color: #008ece;
+      font-size: 16px;
+      font-family: 'jost semi';
+      font-weight: normal;
+      font-style: normal;
+      text-align: left;
+      order: 5;
+      text-transform: uppercase;
+  }
+  
+  .theme .publication-body .body .post-wrapper .clear i,
+  .theme .publication-body .body .post-wrapper .post-bottom,
+  .theme .publication-body .body .post-wrapper .post-shadow {
+     display: none;
+  }
+  
+  .theme .publication-body .bottom .nav .blog-navigation {
+     justify-content: center;
+     align-items: center;
+     display: flex;
+  }
+  
+  .theme .publication-body .bottom .nav .blog-navigation a {
+    border: 1px solid transparent;  
+    padding-left: 15px;
+    padding-right: 15px; 
+    padding-top: 8px;
+    padding-bottom: 8px; 
+    border-radius: 3px;
+    margin-left: 5px;
+    margin-right: 5px; 
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: #008ece; 
+    
+    font-family: 'jost semi';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 16;
+  }
+  
+  .theme .publication-body .bottom .nav .blog-navigation a:focus,
+  .theme .publication-body .bottom .nav .blog-navigation a:hover,
+  .theme .publication-body .bottom .nav .blog-navigation a:active {
+    border: 1px solid #008ece;
+    background-color: white; 
+    color: #008ece;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 8px;
+    padding-bottom: 8px; 
+  }
+  
+
+
+/* END Publications */
+
+
+
+/* Begin Consultant */
+
+  .theme .consultant-banner {
+    background: url(../../assets/images/consultants/consultants-banner-mobile-bg.png) no-repeat left center;
+    background-size: calc(100% + 85px);
+    /* margin-bottom: 50px;
+    padding-top: 75px; */
+    margin-top: 75px;
+    height: 400px;
+  }
+  
+  .theme .consultant-banner h1 {
+    margin-bottom: 20px;
+  }
+
+  .theme .our-consultants {
+    padding-top: 50px; 
+  }
+
+  .theme .our-consultants .box {
+    margin-top: 10px;
+    margin-bottom: 40px;
+  }
+
+  .theme .our-consultants .title {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+
+  .theme .our-consultants .sub-title {
+    margin-top: 5px;
+    padding-bottom: 10px;
+  }
+  
+  .theme .our-consultants .consultant-country {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    /* padding-right: 10px; */
+  }
+
+  .theme .our-consultants ul {
+    width: 300px;
+  }
+
+  .theme .our-consultants .consultant-languages {
+    margin-bottom: 5px; 
+  }
+
+  .theme .our-consultants .consultant-email {
+    margin-bottom: 10px; 
+  }
+
+  .theme .our-consultants .consultant-about {
+    margin-top: 30px;
+    margin-bottom: 10px; 
+  }
+
+  .theme .our-consultants .link {
+    border: 1px solid #008ece;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    padding: 12px 25px;
+    width: 230px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+  } 
+
+  .theme .our-consultants .link:hover, 
+  .theme .our-consultants .link:focus, 
+  .theme .our-consultants .link:active {
+    background: #008ece;
+    color: #fff;
+}
+
+.theme .our-team .body .left {
+  margin-right: -50px;
+}
+
+/* End of Consultant */
+
+/* Begin Sales Excellence */
+.theme .sales-excellence-body .sales-excellence-banner {
+  background: url('../images/sales-excellence/sales-excellence-banner-mobile-bg.png') no-repeat center center;
+  background-size: calc(100% + 85px);
+  background-position: center center;
+  height: 550px;
+}
+
+.theme .sales-excellence-body .sales-excellence-banner h1 {
+  margin-bottom: 20px;
+}
+
+.theme .sales-excellence-body .values .challenges {
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+  .theme .client-sales {
+    background: url('../../assets/images/sales-excellence/blue-pattern-bg.png') no-repeat center top;
+    background-size: auto 250px;
+    margin-bottom: 100px;
+  }
+  
+  .theme .client-sales .container {
+    padding-bottom: 50px;
+    padding-top: 50px;
+  }
+  
+  
+  .theme .client-sales p:not(:last-of-type) {
+    margin-bottom: 15px;
+  }
+  
+  .theme .client-sales .video {
+    margin-bottom: 30px;
+  }
+  
+  .theme .client-sales .video iframe {
+    width: 100%;
+  }
+  
+  /* .theme .client-sales .right {
+    margin-bottom: 20px;
+  } */
+  
+  .theme .client-sales .right img {
+    margin: 0px auto;
+    display: block;
+  } 
+  
+  .theme .client-sales .white-block {
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.14);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.14);
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.14);
+    border-radius: 5px;
+    padding: 30px 15px;
+  }
+
+  .theme .client-sales .white-block .col-12:not(:last-of-type) {
+    margin-bottom: 10px;
+  }
+  
+  .theme .client-sales .list li:before {
+    font-family: "Font Awesome 5 Free";
+    margin-right: 20px;
+    font-weight: 900;
+    content: "\f00c";
+    color: #008ece;
+  }
+
+  .theme .client-sales .white-block .title {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    height: 100px;
+  }
+  .theme .client-sales .white-block .about {
+    margin-top: 20px;
+    height: 300px;
+  }
+
+  .theme .client-sales .btn {
+    border: 1px solid #008ece;
+    background: #008ece; 
+    height: 40px;
+    width: 200px;
+    position: absolute;
+    bottom: -20px;
+    left: calc(50% - 100px);
+  }
+  .theme .client-sales .btn:hover, 
+  .theme .client-sales .btn:focus, 
+  .theme .client-sales .btn:active {
+    border: 1px solid #008ece;
+    background: #fff;
+    color: #008ece;
+  }
+  .theme .client-sales .container .video {
+    background: black;
+  }
+  
+/* End of Sales Excellence */
+
+/* Begin Culture Transformation */
+.theme .culture-transformation-body .culture-transformation-banner {
+  background: url('../images/culture-transformation/culture-transformation-banner-mobile-bg.png.png') no-repeat center center;
+  background-size: calc(100% + 85px);
+  background-position: center center;
+  height: 550px;
+}
+
+.theme .client-culture {
+  background: url('../images/culture-transformation/blue-pattern-bg.png') no-repeat center top;
+  background-size: auto 250px;
+  margin-bottom: 100px;
+}
+.theme .culture-transformation-body .culture-transformation-banner h1 {
+  margin-bottom: 20px;
+}
+
+.theme .client-culture .container {
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+
+.theme .culture-transformation-body .values {
+  margin-top: 20px !important;
+  margin-bottom: -120px !important;
+}
+
+.theme .culture-transformation-body .values .container .row {
+  margin-bottom: 50px;
+}
+.theme .culture-transformation-body .values .challenges {
+  margin-bottom: 30px;
+
+}
+
+.theme .client-culture .video iframe {
+  width: 100%;
+}
+
+.theme .client-culture .video {
+  margin-bottom: 30px;
+}
+.theme .client-culture .white-block {
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.14);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.14);
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.14);
+  border-radius: 5px;
+  padding: 30px 15px;
+}
+
+
+.theme .client-culture .btn {
+  border: 1px solid #008ece;
+  background: #008ece;
+  height: 40px;
+  width: 200px;
+  position: absolute;
+  bottom: -20px;
+  left: calc(50% - 100px);
+}
+
+.theme .client-culture .white-block .col-12:not(:last-of-type) {
+  margin-bottom: 10px;
+} 
+
+.theme .client-culture .white-block .title {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  height: 100px;
+}
+
+.theme .client-culture .white-block .about {
+  margin-top: 20px;
+  height: 300px;
+}
+
+.theme .culture-transformation-body .client-culture .list li:before {
+    font-family: "Font Awesome 5 Free";
+    margin-right: 20px;
+    font-weight: 900;
+    content: "\f00c";
+    color: #008ece;
+    margin-top: 3px;
+  }
+  
+  .theme .client-culture .container .video {
+    background: black;
+  }
+/* End of Culture Transformation */
+
+/* Begin Meet our team */
+  
+  .theme .our-team-banner {
+    background: url(../../assets/images/meet-our-team/our-team-banner-mobile-bg.png) no-repeat left center;
+    background-size: calc(100% + 85px);
+    /* margin-top: 75px; */
+    height: 400px;
+  }
+  .theme .our-team-banner h1 {
+    margin-bottom: 20px;
+  }
+
+  .theme .our-team {
+    overflow: hidden;
+    padding: 0px;
+  }
+  .theme .our-team .nav-tabs {
+    margin-bottom: 20px;
+    border: 0px;
+  }
+  /* .theme .our-team .tab-content {
+    margin-left: calc(50% - 200px); 
+    padding: 0px;
+    width: 400px;
+  }  */
+ 
+  .theme .our-team .title {
+    margin-bottom: 50px;
+  }
+  
+  .theme .our-team .nav-tabs {
+    margin-bottom: 20px;
+    border: 0px;
+  }
+  
+  .theme .our-team .nav-tabs .nav-link {
+    background: transparent;
+    border: 0px;
+  }
+  
+  .theme .our-team .nav-tabs .nav-link:hover,
+  .theme .our-team .nav-tabs .nav-link:focus,
+  .theme .our-team .nav-tabs .nav-link:active,
+  .theme .our-team .nav-tabs .nav-link.active {
+    text-decoration: underline;
+    color: #008ece;
+  } 
+  .theme .our-team .right {
+    margin-top: 20px; 
+  }
+
+  .theme .our-team li {
+    margin-bottom: 15px;
+  }
+
+  .theme .our-team .body {
+    margin-bottom: 50px;
+  }
+
+  .theme .our-team li:first-of-type {
+    margin-bottom: 30px;
+  }
+
+/* End of Meet our team */
+
+/* Begin Leadership Management */
+.theme .leadership-management-banner {
+  background: url('../images/leadership-and-management/leadership-management-banner-mobile-bg.png') no-repeat center center;
+  background-size: calc(100% + 85px);
+  background-position: center center; 
+  background-position: center center;
+  height: 550px;
+} 
+
+.theme .client-leadership {
+  background: url('../images/leadership-and-management/blue-pattern-bg.png') no-repeat center top;
+  background-size: auto 250px;
+  margin-bottom: 100px;
+}
+
+.theme .leadership-management-body .leadership-management-banner h1 {
+  margin-bottom: 20px;
+}
+.theme .client-leadership .container {
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+
+.theme .client-leadership .video {
+  margin-bottom: 30px;
+}
+
+.theme .client-leadership .white-block {
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.14);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.14);
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.14);
+  border-radius: 5px;
+  padding: 30px 15px;
+}
+
+.theme .client-leadership .white-block .col-12:not(:last-of-type) {
+  margin-bottom: 10px;
+}
+
+
+.theme .client-leadership .white-block .title {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  height: 100px;
+}
+
+.theme .client-leadership .white-block .about {
+  margin-top: 20px;
+  height: 300px;
+}
+
+.theme .client-leadership .white-block .col-12:not(:last-of-type) {
+  margin-bottom: 10px;
+} 
+
+.theme .client-leadership .btn {
+  border: 1px solid #008ece;
+  background: #008ece;
+  height: 40px;
+  width: 200px;
+  position: absolute;
+  bottom: -20px;
+  left: calc(50% - 100px);
+}
+.theme .client-leadership .video iframe {
+  width: 100%;
+}
+
+.theme .client-leadership .list li:before {
+    font-family: "Font Awesome 5 Free";
+    margin-right: 20px;
+    font-weight: 900;
+    content: "\f00c";
+    color: #008ece;
+    margin-top: 3px;
+}
+
+.theme .client-leadership .container .video {
+    background-color: black;
+}
+
+
+/* End of Leadership Management */
+
+/* Begin Coaching */
+.theme .coaching-body .coaching-banner {
+  background: url('../images/coaching/coaching-banner-mobile-bg.png') no-repeat center center;
+  background-size: calc(100% + 85px);
+  background-position: center center;
+  height: 550px;
+}
+
+.theme .client-coaching {
+  background: url('../images/coaching/blue-pattern-bg.png') no-repeat center top;
+  background-size: auto 250px;
+  margin-bottom: 100px;
+}
+ 
+.theme .client-coaching .container {
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+
+.theme .client-coaching .white-block {
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.14);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.14);
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.14);
+  border-radius: 5px;
+  padding: 30px 15px;
+}
+
+.theme .client-coaching .white-block .col-12:not(:last-of-type) {
+  margin-bottom: 10px;
+}
+.theme .client-coaching .white-block .about {
+  margin-top: 20px;
+  height: 300px;
+}
+
+.theme .coaching-body .coaching-banner h1 {
+  margin-bottom: 20px;
+}
+
+.theme .client-coaching .list li:before {
+  font-family: "Font Awesome 5 Free";
+  margin-right: 20px;
+  font-weight: 900;
+  content: "\f00c";
+  color: #008ece;
+}
+
+
+.theme .client-coaching .btn:hover, 
+.theme .client-coaching .btn:focus, 
+.theme .client-coaching .btn:active {
+  border: 1px solid #008ece;
+  background: #fff;
+  color: #008ece;
+}
+.theme .client-coaching .btn {
+  border: 1px solid #008ece;
+  background: #008ece;
+  height: 40px;
+  width: 200px;
+  position: absolute;
+  bottom: -20px;
+  left: calc(50% - 100px);
+}
+
+
+
+.theme .client-coaching .white-block .title {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  height: 100px;
+}
+  .theme .coaching-body .values .container .row {
+    margin-bottom: 50px;
+  }
+  .theme .coaching-body .values .challenges {
+    margin-bottom: 30px;
+
+  }
+
+  .theme .coaching-body .values .list li:before {
+    font-family: "Font Awesome 5 Free";
+    margin-right: 20px;
+    margin-top: 5px;
+    font-weight: 400;
+    content: "\f111";
+    color: #008ece;
+  }
+ 
+/* End of Coaching */
+
+/* Begin Enterprise Development Grant */
+  .theme .enterprise-development-grant-body .enterprise-development-grant-banner {
+    background: url('../images/enterprise-development-grant/enterprise-development-grant-banner-mobile-bg.png') no-repeat center center;
+    background-size: calc(100% + 85px);
+    background-position: center center;
+    height: 550px;
+  }
+
+  .theme .enterprise-development-grant-body .enterprise-development-grant-banner h1 {
+    margin-bottom: 20px;
+  }
+
+  .theme .enterprise-development-grant-body .values .body .first .left  {
+    background: url('../images/enterprise-development-grant/core-capabilities.png') no-repeat center center;
+    background-size: cover;
+    border-radius: 6px;
+  } 
+  .theme .enterprise-development-grant-body .values .body .first .middle  {
+    background: url('../images/enterprise-development-grant/innovation-and-productivity.png') no-repeat center center;
+    background-size: cover;
+    border-radius: 6px;
+  }
+  .theme .enterprise-development-grant-body .values .body .first .right  {
+    background: url('../images/enterprise-development-grant/market-access.png') no-repeat center center;
+    background-size: cover;
+    border-radius: 6px;
+  }
+  
+  .theme .enterprise-development-grant-body .values .body .left,
+  .theme .enterprise-development-grant-body .values .body .middle,
+  .theme .enterprise-development-grant-body .values .body .right {
+    height: 100% !important;
+    margin-bottom: 30px;
+  }
+  
+  .theme .enterprise-development-grant-body .values .body .first .row .col-md-4 {
+    margin-bottom: 30px;
+  }
+  .theme .enterprise-development-grant-body .values .body .first {
+    margin-bottom: 30px;
+  }
+
+  .theme .enterprise-development-grant-body .values .body .left .row .title,
+  .theme .enterprise-development-grant-body .values .body .middle .row .title,
+  .theme .enterprise-development-grant-body .values .body .right .row .title {
+    margin-top: 20px;
+    text-align: center; 
+    margin-left: 20px;
+    margin-right: 20px; 
+  }
+
+  .theme .enterprise-development-grant-body .values .body .left .row .list,
+  .theme .enterprise-development-grant-body .values .body .middle .row .list,
+  .theme .enterprise-development-grant-body .values .body .right .row .list {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .theme .enterprise-development-grant-body .values .body .left .list,
+  .theme .enterprise-development-grant-body .values .body .middle .list,
+  .theme .enterprise-development-grant-body .values .body .right .list {
+    counter-reset: my-awesome-counter;
+  }
+
+  .theme .enterprise-development-grant-body .values .body .left .list li,
+  .theme .enterprise-development-grant-body .values .body .middle .list li,
+  .theme .enterprise-development-grant-body .values .body .right .list li {
+    counter-increment: my-awesome-counter;
+  }
+
+  .theme .enterprise-development-grant-body .values .body .left .list li:before,
+  .theme .enterprise-development-grant-body .values .body .middle .list li:before,
+  .theme .enterprise-development-grant-body .values .body .right .list li:before {
+    content: counter(my-awesome-counter) ". ";
+    color: #fff;
+    /* font-weight: bold; */
+    /* font-family: "Font Awesome 5 Free";
+    margin-right: 20px;
+    font-weight: 900;
+    content: "\f00c";
+    color: #008ece; */
+    font-family: 'jost semi';
+    src: url('../fonts/j-s.eot');
+    src: local('Jost* Semi'), local('Jost-Semi'),
+      url('../fonts/j-s.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/j-s.woff') format('woff'),
+      url('../fonts/j-s.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+    margin-top: 5px;
+  }
+
+  .theme .enterprise-development-grant-body .values .body .second {
+    margin-bottom: 50px;
+  }
+
+  .theme .enterprise-development-grant-body .values .body .second .body .sub-title,
+  .theme .enterprise-development-grant-body .values .body .second .body .list {
+    margin-bottom: 30px;
+  }
+
+  .theme .enterprise-development-grant-body .values .body .second .body .list li:before {
+    font-family: "Font Awesome 5 Free";
+    margin-right: 20px;
+    font-weight: 900;
+    content: "\f00c";
+    color: #008ece;
+    margin-top: 4px;
+    margin-left: -30px;
+  }
+
+  .theme .enterprise-development-grant-body .values .body .third {
+    margin-bottom: 50px;
+  }
+
+  .theme .enterprise-development-grant-body .values .body .third .body .sub-title,
+  .theme .enterprise-development-grant-body .values .body .third .body .list {
+    margin-bottom: 30px;
+  }
+  
+  /* .theme .enterprise-development-grant-body .values .body .fourth {
+    margin-bottom: 50px;
+  } */
+  .theme .enterprise-development-grant-body .values .body .fourth .body .sub-title,
+  .theme .enterprise-development-grant-body .values .body .fourth .body .list {
+    margin-bottom: 30px;
+  }
+
+  .theme .enterprise-development-grant-body .values .body .third .body .list li:before,
+  .theme .enterprise-development-grant-body .values .body .fourth .body .list li:before {
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 400;
+    content: "\f111";
+    color: #008ece;
+    margin-top: 4px;
+    margin-left: -30px; 
+       
+  }
+
+  .theme .enterprise-development-grant-body .values .body .first .row .left .row h4,
+  .theme .enterprise-development-grant-body .values .body .first .row .middle .row h4,
+  .theme .enterprise-development-grant-body .values .body .first .row .right .row h4 {
+    margin-top: 30px;
+    text-align: center;
+    height: 70px;
+  } 
+  .theme .enterprise-development-grant-body .values .body .first .row .left .row .list ul,
+  .theme .enterprise-development-grant-body .values .body .first .row .middle .row .list ul,
+  .theme .enterprise-development-grant-body .values .body .first .row .right .row .list ul {
+    height: 300px;
+    padding: 0px;
+  }
+  
+  .theme .enterprise-development-grant-body .values {
+    margin-bottom: -120px !important;
+    margin-top: 20px !important;
+  }
+   
+  
+  .theme .enterprise-development-grant-body .body .fifth .row .right p {
+    margin-bottom: 100px;
+  }
+ 
+/* End of Enterprise Development Grant */
+
+/* Begin Programme Page */
+  .theme .programme-banner {
+    background: url('../images/programme-page/programme-banner-mobile-bg.png') no-repeat center center;
+    background-size: calc(100% + 85px);
+    background-position: center center;
+    height: 550px;
+  }
+
+
+  .theme .programme-banner h1 {
+    margin-bottom: 20px;
+  }
+ 
+  .theme .programme .title {
+    margin-bottom: 20px;
+  }
+
+  .theme .programme .sub-title {
+    margin-bottom: 90px;
+  }
+
+
+  .theme .programme .white-block {
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.14);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.14);
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.14);
+    border-radius: 5px;
+    padding: 30px 15px;
+  }
+  
+  .theme .programme .white-block {
+    padding: 45px 15px;
+  }
+  
+  .theme .programme-banner p {  
+    margin-top: 15px;
+  }  
+  .theme .programme {
+    overflow: hidden;
+    padding: 0px;
+  }
+  
+  .theme .programme .container {
+    margin-bottom: 50px;
+    margin-top: 50px;
+  }
+  
+  .theme .programme .body .col-12 {
+    margin-bottom: 50px;
+  }
+  
+  .theme .programme .body .white-block .text-block {
+    margin-top: 30px;
+    width: 250px;
+    /* padding-left: 20px;
+    padding-right: 20px; */
+  }
+
+  .theme .programme .body .white-block .text-block li h3 {
+    height: 50px;
+  }
+    
+  .theme .programme .body .white-block li {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  .theme .programme .body .white-block h3 {  
+    margin-bottom: 25px; 
+  }
+
+  .theme .programme .btn {
+    border: 1px solid #008ece;
+    background: #008ece;
+    height: 40px;
+    width: 200px; 
+    left: calc(50% - 100px);
+  }
+  .theme .programme .btn:hover, 
+  .theme .programme .btn:focus, 
+  .theme .programme .btn:active {
+    border: 1px solid #008ece;
+    background: #fff;
+    color: #008ece;
+  }
+
+  .theme .programme .link a:hover, 
+  .theme .programme .link a:focus, 
+  .theme .programme .link a:active {
+    /* border: 1px solid #008ece; */
+    /* background: #fff; */
+    /* color: #008ece; */
+    text-decoration: underline;
+  }
+ 
+  .theme .programme .body .white-block ul {
+    width: 100%;
+  }
+
+/* End of Programme Page */
+
+/*Begin Cookie Container */
+
+
+.cookie-container p {
+  margin: 24px 0;
+}
+ 
+.cookie-container {
+  position: fixed;
+  bottom: -100%;
+  left: 0;
+  right: 0;
+  background: #2f3640;
+  color: #f5f6fa;
+  padding: 0 32px;
+  box-shadow: 0 -2px 16px rgba(47, 54, 64, 0.39); 
+  transition: 400ms;
+}
+
+.cookie-container.active {
+  bottom: 0;
+}
+
+.cookie-container a {
+  color: #f5f6fa;
+}
+
+.cookie-btn {
+  background: #e84118;
+  border: 0;
+  color: #f5f6fa;
+  padding: 12px 48px;
+  font-size: 18px;
+  margin-bottom: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* End of Cookie Container */
+
+
+
+
+
+
+@media only screen and (min-width: 320px){ 
+  /*Begin Header*/
+    .theme .header .navbar-nav .nav-item .dropdown .btn {
+        color:black;
+    }
+   
+  /*End of Header*/
+  
+  /* Begin About Us */
+  .theme .about-us-banner {
+    margin-bottom: 50px;
+  }
+
+  .theme .university .container .row .right h4 {
+    margin-top: 30px;
+  }
+  /* End of About Us */
+
+  /* Begin Contact Us */
+  .thene .contact-us-banner {
+    background-size: calc(100% + 85px);
+    height: 1000px;
+  }
+  .theme .contact-us-banner .left {
+    top: 50px;
+  }
+  .theme .contactform .right .contact .col-12 .row {
+    margin-bottom: 60px;
+  } 
+  .theme .contactform .container {
+    padding-bottom: 0;
+  }
+  /*.theme .contactform .left .row .image {*/
+  /*  overflow: hidden;*/
+  /*}*/
+  .theme .contactform .business-hours {  
+    position: relative;   
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+    margin-bottom: -50px;
+  }
+  .theme .contactform .container .row .d-flex {
+    margin-top: -150px;
+  }
+ .theme .contactform .row .right .row { 
+    margin-bottom: 150px;
+  }
+   
+  /* End of Contact Us */
+
+  /* Begin All of Logos*/
+    .theme .management {
+      margin-bottom: 50px;
+  } 
+  /* End All of Logos*/
+  
+
+  /* Begin Consultant */
+
+  .theme .consultant-banner h1 {
+    font-size: 32px;
+  }
+
+  .theme .consultant-banner { 
+    background-size: calc(100% + 85px);
+    
+  } 
+  /* End of Consultant */
+
+  /* Begin Sales Excellence */
+  .theme .sales-excellence-body .client-sales .intro p {
+    margin-bottom: 50px;
+    margin-top: 20px;
+  }
+
+  .theme .client-sales .white-block .about {
+     margin-top: 80px;
+    margin-bottom: 80px;   
+   height: 370px; 
+  }
+
+  .theme .client-sales .left,
+  .theme .client-sales .middle,
+  .theme .client-sales .right { 
+    margin-bottom: 80px; 
+  } 
+  /* End of Sales Excellence */
+
+  /* Begin Culture Transformation */ 
+  .theme .client-culture .left, 
+  .theme .client-culture .middle, 
+  .theme .client-culture .right {
+    margin-bottom: 80px;
+  }
+
+  .theme .client-culture .white-block .about {
+    margin-top: 80px;
+    margin-bottom: 150px;
+    height: 370px;
+}
+
+  .theme .culture-transformation-body .client-culture .intro p {
+    margin-bottom: 50px;
+    margin-top: 20px;
+  }
+  /* End of Culture Transfomation */
+
+  /* Begin Meet our team */
+  .theme .our-team-banner {
+    background-size: calc(100% + 85px);
+    height: 500px;
+  } 
+  .theme .our-team {
+    margin-top: 50px;
+  }
+  .theme .our-team ul {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .theme .our-team .right p {
+    text-align: center;
+  }
+  /* End of Meet our team */
+
+   /* Begin Leadership Management */ 
+   .theme .leadership-management-body .leadership-management-body { 
+     margin-top: 40px;
+   }
+    .theme .leadership-management-banner .leadership-management-banner .row {
+     margin-top: 40px;
+   } 
+   .theme .leadership-management-body .values .container .row .left p { 
+    margin-bottom: 15px;
+   } 
+
+   .theme .leadership-management-body .values .container .row .right-two {
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+  .theme .leadership-management-body .client-leadership .intro p {
+    margin-bottom: 50px;
+    margin-top: 20px;
+  }
+  .theme .client-leadership .left,
+  .theme .client-leadership .middle, 
+  .theme .client-leadership .right {
+    margin-bottom: 80px;
+  } 
+  .theme .client-leadership .white-block .about {
+    margin-top: 30px; 
+    height: 250px;
+  }
+
+
+  /* End of Leadership Management */
+
+  /* Begin Coaching */
+  .theme .client-coaching .left, 
+  .theme .client-coaching .middle, 
+  .theme .client-coaching .right {
+    margin-bottom: 80px;
+  }
+
+  .theme .client-coaching .white-block .about {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    height: 300px;
+  } 
+  .theme .coaching-body .values .float-img img {
+    width: 500px;
+    height: 200px;
+  }
+  .theme .coaching-body .client-coaching .intro p {
+    margin-bottom: 50px;
+    margin-top: 20px;
+  }
+  /* End of Coaching */
+
+  /* Begin Enterprise Development Grant */
+  .theme .enterprise-development-grant-body .values .body .third .body .col-12 .bad-presentation {
+    margin-top: -50px;
+  }
+
+  .theme .enterprise-development-grant-body .values .body .fourth .body .col-12 .change-announcement {
+    margin-top: -350px;
+  }
+
+  .theme .enterprise-development-grant-body .values .body .fourth .body .col-12 .delegate {
+    margin-top: -420px;
+  }
+  /* End of Enterprise Development Grant */
+}
+
+
+
+
+
+/* BEGIN responsive */
+@media only screen and (min-width: 576px) {
+  /* BEGIN header */
+  .theme header .bottom .logo-link {
+    width: 170px !important;
+  } 
+    .theme header .navbar-nav .dropdown .btn {
+        color:black;
+    }
+    
+    .theme .header .navbar-nav .dropdown .dropdown-menu {
+        border: transparent;
+    }
+  /*End of Header*/ 
+
+  /* BEGIN what we offer */
+  .theme .what-we-offer .item:not(:last-of-type) {
+    margin-bottom: 100px;
+  }
+
+  .theme .what-we-offer .item:nth-last-of-type(2), 
+  .theme .what-we-offer .item:last-of-type {
+    margin-bottom: 20px;
+  }
+
+  .theme .what-we-offer .heading {
+    padding-bottom: 10px;
+  }
+
+  .theme .what-we-offer .text-block .subtitle {
+    bottom: calc(0% - 40px);
+    height: 65px;
+  }
+
+  .theme .what-we-offer .block:hover p,
+  .theme .what-we-offer .block:focus p,
+  .theme .what-we-offer .block:active p {
+    display: none;
+  }
+
+  .theme .what-we-offer .block:hover .subtitle, 
+  .theme .what-we-offer .block:focus .subtitle, 
+  .theme .what-we-offer .block:active .subtitle {
+    top: calc(50% - 70px);
+    bottom: unset;
+  }
+
+
+  .theme .what-we-offer .block:hover .link, 
+  .theme .what-we-offer .block:focus .link, 
+  .theme .what-we-offer .block:active .link {
+    top: calc(50% + 30px);
+  }
+   
+  
+  /* END what we offer */
+  
+  /* Begin All of Logos*/
+    .theme .management {
+      margin-bottom: 0px;
+  } 
+  /* End All of Logos*/
+  
+
+  /* begin WHY CHOOSE US */
+  .theme .why-choose-us {
+    padding-bottom: 50px;
+  }
+  /*   END why choose us */
+
+  /* BEGIN client cases */ 
+  .theme .client-cases .title {
+    margin-bottom: 30px;
+  }
+
+  .theme .client-cases .nav-tabs {
+    margin-bottom: 60px;
+  }
+
+  .theme .client-cases .tab-content {
+    margin-left: calc(50% - 250px);
+    width: 500px;
+  }
+  /* END client cases */
+
+  /* BEGIN footer */
+  .theme footer .twin-columns .columns:nth-of-type(2) {
+    padding-bottom: 25px;
+    padding-top: 50px;
+  }
+
+  .theme footer .twin-columns + .columns {
+    padding-top: 50px;
+  }
+
+  .theme footer .twin-columns + .columns + .columns {
+    padding-top: 50px;
+  }
+  /* END footer */
+
+  /* BEGIN client cases page content */
+  .theme .client-cases.page-content .tab-content .carousel-item .col-6:nth-last-of-type(2) {
+    margin-bottom: 20px;
+  }
+
+  .theme .client-cases.page-content .tab-content .carousel-item .col-6:nth-child(n) {
+    padding-left: 5px;
+  }
+
+  .theme .client-cases.page-content .tab-content .carousel-item .col-6:nth-child(2n) {
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+
+  .theme .client-cases.page-content .tab-content .carousel-item .col-6:last-of-type {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .theme .client-cases.page-content .tab-content .carousel-item .block {
+    height: 140px;
+    width: 140px;
+  }
+  /* END client cases page content */
+
+  /* BEGIN page banner */
+  .theme .about-banner {
+    background: url('../../assets/images/about-banner-bg.png') no-repeat bottom center;
+    background-size: calc(100% + 505px);
+    background-position: left center;
+    margin-bottom: 50px;
+    /*     padding-top: 80px; */
+    height: 265px;
+  }
+  /* END page banner */
+
+  /* BEGIN section about */
+  .theme .section-about .video iframe {
+    min-height: 350px;
+  }
+  /* END section about */
+
+  /* BEGIN achievements */
+  .theme .achievements .block {
+    padding-bottom: 35px;
+    padding-top: 35px;
+  }
+
+  .theme .achievements .number {
+    margin-bottom: 10px;
+  }
+  /* END achievements */
+
+  /* BEGIN calltoact */
+  .theme .call-to-act .btn {
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.14);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.14);
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.14);
+    display: inline-block;
+    letter-spacing: 1px;
+    padding: 13px 30px;
+    height: 50px;
+    width: auto;
+  }
+  /* END calltoact */
+
+  /* BEGIN university */
+  .theme .university iframe { 
+    min-height: 350px;
+  }
+
+  .theme .university .title {
+    margin-bottom: 25px;
+  }
+  
+  /* END university */
+
+  /* BEGIN why choose us page banner */
+  .theme .why-choose-us-body .why-choose-us-banner {
+    background-position: calc(50% + 280px) center;
+  }
+  /* END why choose us page banner */
+
+  /* BEGIN impact */
+  .theme .impact .video iframe {
+    height: 300px;
+  }
+  /* END impact */
+ 
+
+  /* Begin Contact Us */ 
+  .theme .contactform .row .right .row { 
+    margin-bottom: 0px;
+  }
+  .theme .contactform .row .left { 
+    margin-bottom: 0px;
+  }
+  .theme .contact-us-banner .left { 
+    margin-top: 0px;
+  }
+  /* End of Contact Us */
+
+  /* Begin Publication */
+  
+  /* End of Publication */
+
+  /* Begin Culture Transformation */
+  .theme .client-culture .white-block .about {
+    margin-top: 180px;
+    margin-bottom: 350px;
+    height: 370px;
+  }
+
+  .theme .client-culture .video iframe {
+    height: 300px;
+  }
+  /* End of Culture Transformaton */
+
+
+  /* BEGIN client cases */ 
+
+  .theme .publication-body .title {
+    margin-bottom: 30px;
+  }
+
+  .theme .publication-body .nav-tabs {
+    margin-bottom: 60px;
+  }
+
+  .theme .publication-body .tab-content {
+    margin-left: calc(50% - 250px);
+    width: 500px;
+  }
+  /* END client cases */
+
+  /* Begin Leadership Management */
+  .theme .client-leadership .video iframe {
+    height: 300px;
+  }
+  
+  .theme .client-leadership .white-block .about {
+    margin-top: 20px;
+    margin-bottom: 100px;
+    height: 260px;
+  }
+
+  /* End of Leadership Management */
+
+  /* Begin Consultant */
+  .theme .consultant-banner {
+    background: url(../../assets/images/consultants/consultants-banner-bg.png) no-repeat bottom center;
+    background-size: calc(100% + 505px);
+    background-position: center center;
+    /* margin-bottom: 50px; */
+    /* padding-top: 80px; */ 
+    margin-top: 75px; 
+    height: 265px;
+  }
+  /* End of Consultant */
+
+  /* Begin Sales Excellence */
+  .theme .sales-excellence-body .sales-excellence-banner {
+    background-position: calc(50% + 280px) center;
+  }
+  /*.theme .sales-excellence-banner {*/
+  /*  background: url(../../assets/images/sales-excellence/sales-excellence-banner-bg.png) no-repeat bottom center;*/
+  /*  background-size: calc(100% + 505px);*/
+  /*  background-position: left center;*/
+  /*  margin-bottom: 50px; */
+  /*  height: 265px;*/
+  /*}*/
+ 
+  .theme .client-sales .video iframe {
+    height: 300px;
+  } 
+
+  /* End of Sales Excellence */
+
+  /* Begin Meet our team */
+ 
+  .theme .our-team-banner {
+      background: url(../../assets/images/meet-our-team/our-team-banner-bg.png) no-repeat bottom center;
+      background-size: calc(100% + 505px);
+      background-position: center center;
+      /* margin-bottom: 50px; */
+      /* padding-top: 80px; */
+      margin-top: 75px;
+      height: 265px;
+  }
+  .theme .our-team {
+     margin-top: 50px;
+  }
+  .theme .our-team .nav-tabs {
+    margin-bottom: 50px;
+  }
+  .theme .our-team h4 {
+    margin-bottom: 50px;
+  } 
+
+  /* End of Meet our team */
+ 
+}
+
+
+
+
+
+
+@media only screen and (min-width: 768px) {
+  /* BEGIN header */
+  .theme .header .bottom .logo-link {
+    width: 200px !important;
+  }
+  /* END header */
+
+  /* BEGIN what we offer */
+  .theme .what-we-offer .block:hover .subtitle,
+  .theme .what-we-offer .block:focus .subtitle,
+  .theme .what-we-offer .block:active .subtitle {
+    top: calc(50% - 130px);
+  }
+
+  .theme .what-we-offer .block:hover p,
+  .theme .what-we-offer .block:focus p,
+  .theme .what-we-offer .block:active p {
+    display: block;
+  }
+
+  .theme .what-we-offer .block:hover .link, 
+  .theme .what-we-offer .block:focus .link, 
+  .theme .what-we-offer .block:active .link {
+    top: calc(50% + 90px);
+  }
+  /* END what we offer */
+  
+  /* Begin All of Logos*/
+    .theme .management {
+      margin-bottom: 0px;
+  } 
+  /* End All of Logos*/
+
+  /* BEGIN get in touch subscribe */
+  .theme .subscribe,
+  .theme .contact {
+    margin: 0px auto;
+  }
+  /* END get in touch subscribe */
+
+  /* BEGIN get in touch */
+  .theme .get-in-touch .container {
+    padding-bottom: 100px;
+  }
+ 
+  /* END get in touch */
+
+  /* BEGIN section about */
+  .theme .section-about .video iframe {
+    min-height: 400px;
+  }
+  /* END section about */
+
+  /* BEGIN achievements */
+  .theme .achievements .col-6:first-of-type, 
+  .theme .achievements .col-6:nth-of-type(2) {
+    margin-bottom: 0px;
+  }
+  /* END achievements */
+
+  /* BEGIN section about */
+  .theme .section-about .video iframe {
+    min-height: 400px;
+  }
+  /* END section about */
+
+  /* BEGIN values */
+  /* .theme .values .intro {
+    margin-bottom: 50px;
+  } */
+ 
+
+
+  /* END values */
+
+  /* BEGIN client cases page content */
+  .theme .client-cases.page-content .tab-content .carousel-item .col-6:nth-last-of-type(2) {
+    margin-right: 0px;
+    margin-left: auto;
+  }
+
+  .theme .client-cases.page-content .tab-content .carousel-item .col-6:last-of-type {
+    margin-bottom: 20px;
+    margin-right: auto;
+    margin-left: 0px;
+  }
+  /* END client cases page content */
+
+  /* BEGIN Why Choose Us */
+  .theme .why-choose-us-body .why-choose-us-banner {
+    background: url('../images/why-choose-us/why-choose-us-banner-bg-2.png') no-repeat center center;
+    background-size: calc(100% + 505px);
+    background-position: center center;
+    margin-bottom: -120px;
+  } 
+
+  .theme .why-choose-us-body .why-choose-us-banner .row {
+    margin-top: -40px;
+  }
+
+  /* .theme .why-choose-us-body .why-choose-us-banner .row {
+    margin-top: -80px;
+  } */
+
+  .theme .why-choose-us-body .why-choose-us-banner .container {
+    padding-bottom: 0px;
+  }
+  /* END of Why Choose Us */
+
+  /* Begin Our Consultants */
+  .theme .consultant-banner h1 {
+    font-size: 50px;
+  }
+  .theme .consultant .container {
+    padding-top: 50px;
+  }
+  /* End of Our Consultants */
+
+  /* BEGIN impact */
+  .theme .impact .video {
+    margin-bottom: 50px;
+  }
+
+  .theme .impact .video iframe {
+    height: 400px;
+  }
+  /* END impact */
+
+  /* BEGIN training */
+  .theme .training .container {
+    padding-bottom: 50px;
+  }
+  /* END training */
+
+  /* BEGIN innovation */
+  .theme .innovation .video {
+    margin-bottom: 40px;
+  }
+
+  .theme .innovation .video iframe {
+    height: 400px;
+  }
+  /* END innovation */
+
+  /* Begin Contact Us */
+
+  .theme .contact-us-banner {
+    background: url('../images/contacts/contact-us-banner-bg.png') no-repeat center center;
+    background-size: calc(100% + 505px);
+    background-position: center center; 
+  }
+  .theme .contact-us-banner .row .right h5:last-of-type {
+    word-break: break-all;
+  }
+  .theme .contactform .container .row .d-flex {
+    margin-top: -250px;
+  }
+  .theme .contactform .row .left { 
+    margin-bottom: 0px;
+  }
+  .theme .contactform .row .right .row { 
+    margin-bottom: 0px;
+  }
+  .theme .contactform .row .left .row { 
+    margin-top: 210px;
+  }
+  /*.theme .contact-us-banner .left { */
+  /*  top: 0px;*/
+  /*}*/
+  /* End of Contact Us */
+
+  /* Begin About Us */
+  .theme .about-us-banner {
+    background: url('../images/about-us/about-us-banner-bg.png') no-repeat center center;
+    background-size: calc(100% + 505px);
+    background-position: center center;
+    margin-bottom: -50px;
+  } 
+
+  .theme .about-us-body .about-us-banner .row {
+    margin-top: -40px;
+  }
+  /* End of About Us */
+
+  /* Begin Publication */
+  .theme .publication-banner {
+    background: url('../images/publications/publications-banner-bg.png') no-repeat center center;
+    background-size: calc(100% + 505px);
+    background-position: center center;
+    margin-bottom: -50px;
+  } 
+
+  .theme .publication-banner .row {
+    margin-top: -40px;
+  }
+
+  .theme .publication-body.page-content .tab-content .carousel-item .col-6:nth-last-of-type(2) {
+    margin-right: 0px;
+    margin-left: auto;
+  }
+
+  .theme .publication-body.page-content .tab-content .carousel-item .col-6:last-of-type {
+    margin-bottom: 20px;
+    margin-right: auto;
+    margin-left: 0px;
+  }
+  /* End of Publication */
+
+  /* Begin Sales Excellence */
+  .theme .sales-excellence-body .sales-excellence-banner {
+    background: url('../images/sales-excellence/sales-excellence-banner-bg-2.png') no-repeat center center;
+    background-size: calc(100% + 505px);
+    background-position: center center;
+    margin-bottom: -120px;
+  }
+
+  .theme .sales-excellence-body .sales-excellence-banner .row {
+    margin-top: -40px;
+  }
+
+  .theme .client-sales .video {
+    margin-bottom: 50px;
+  }
+
+  .theme .client-sales .video iframe {
+    height: 400px;
+  }
+
+  
+  /* End of Sales Excellence */
+
+  /* Begin Culture Transformation */
+  .theme .culture-transformation-body .culture-transformation-banner {
+    background: url('../images/culture-transformation/culture-transformation-banner-bg-2.png') no-repeat center center;
+    background-size: calc(100% + 505px);
+    background-position: center center; 
+    margin-bottom: -120px;
+  }
+  .theme .client-culture .video {
+    margin-bottom: 50px;
+  }
+  .theme .culture-transformation-body .culture-transformation-banner .row {
+    margin-top: -40px;
+  }
+  .theme .client-culture .video iframe {
+    height: 400px;
+  }
+ 
+  /* End of Culture Transformation */
+
+  /* Begin Leadership Management */
+  .theme .leadership-management-body .leadership-management-banner {
+    background: url('../images/leadership-and-management/leadership-managament-banner-bg-2.png') no-repeat center center;
+    background-size: calc(100% + 505px);
+    background-position: center center;
+    margin-bottom: -100px;
+  }
+  .theme .values .container .row .right-two {
+    margin-bottom: 50px;
+  }
+
+  .theme .leadership-management-body .leadership-management-banner .row {
+    margin-top: -40px;
+  }
+  .theme .client-leadership .video {
+    margin-bottom: 50px;
+  }
+  .theme .client-leadership .video iframe {
+    height: 400px;
+  }
+  
+  .theme .client-leadership .white-block .about {
+    margin-top: 20px;
+    margin-bottom: 100px;
+    height: 260px;
+  }
+  /* End of Leadership Management */
+
+  /* Begin Coaching */
+  .theme .coaching-body .coaching-banner {
+    background: url('../images/coaching/coaching-banner-bg-2.png') no-repeat center center;
+    background-size: calc(100% + 505px);
+    background-position: center center;
+    margin-bottom: -120px;
+    
+  }
+  .theme .coaching-body .values .big-img {
+    height: 400px;
+  }
+
+  .theme .coaching-body .coaching-banner .row {
+    margin-top: -40px;
+  }
+  /* End of Coaching */
+
+  /* Begin Enterprise Development Grant */
+  .theme .enterprise-development-grant-body .enterprise-development-grant-banner {
+    background: url('../images/enterprise-development-grant/enterprise-development-grant-banner-bg-2.png') no-repeat center center;
+    background-size: calc(100% + 505px);
+    background-position: center center;
+    margin-bottom: -120px;
+  }  
+  .theme .enterprise-development-grant-body .values .body .fourth .body .col-12 .change-announcement {
+    margin-top: 0px;
+  }
+  .theme .enterprise-development-grant-body .values .body .fourth .body .col-12 .delegate {
+    margin-top: 0px;
+  }
+  /* End of Enterprise Development Grant */
+
+  /* Begin Programme Page */
+  .theme  .programme-banner {
+    background: url('../images/programme-page/programme-banner-bg-2.png') no-repeat center center;
+    background-size: calc(100% + 505px);
+    background-position: center center;;
+    margin-bottom: -50px;
+  }  
+
+  .theme .programme-banner .row {
+    margin-top: -30px;
+  }
+  .theme .programme .body .white-block ul {
+    width: 300px;
+  }
+  /* End of Programme Page */
+}
+
+
+
+
+@media only screen and (min-width: 992px) {
+  /* BEGIN header */
+  /*.theme .header .navbar {*/
+  /*  padding-bottom: 45px;*/
+  /*  padding-top: 45px;*/
+  /*}*/
+
+  .theme .header .navbar-nav .nav-link {
+    padding-right: 15px;
+    padding-left: 15px;
+    color: #222;
+  }
+
+  .theme .header .navbar-nav .nav-link:hover,
+  .theme .header .navbar-nav .nav-link:focus,
+  .theme .header .navbar-nav .nav-link:active,
+  .theme .header .navbar-nav .nav-item.active .nav-link {
+    color: #008ece;
+  }
+  /* END header */
+
+  /* BEGIN header blw */
+  .theme .header.sps--blw .navbar {
+    padding-bottom: 5px;
+    padding-top: 5px;
+  }
+  /* END header blw */
+
+  /* BEGIN footer */
+  .theme footer .copyright .col-12 {
+    padding-top: 50px;
+  }
+  /* END footer */
+
+  /* BEGIN home banner */
+
+  .containment .contactbanner .container {
+    margin-top: 150px;
+    margin-bottom: 150px;
+  }
+
+  .theme .banner .tp-revslider-mainul .tp-revslider-slidesli .slotholder:first-of-type {
+    display: none;
+  }
+
+  .theme .banner .tp-revslider-mainul .tp-revslider-slidesli .slotholder:nth-of-type(2) {
+    display: block;
+  }
+  /* END home banner */
+  
+  /* Begin All of Logos*/
+    .theme .management {
+      margin-bottom: 0px;
+  } 
+  /* End All of Logos*/
+
+  /* BEGIN what we offer */
+  .theme .what-we-offer .block {
+    height: 100%;
+  }
+
+  .theme .what-we-offer .heading .col-12 {
+    padding-top: 90px;
+  }
+
+  .theme .what-we-offer .heading p {
+    margin-right: auto;
+    margin-left: auto;
+    width: 500px;
+  }
+
+  .theme .what-we-offer .item:not(:last-of-type) {
+    margin-bottom: 100px;
+  }
+
+  .theme .what-we-offer .item:nth-last-of-type(3),
+  .theme .what-we-offer .item:nth-last-of-type(2),
+  .theme .what-we-offer .item:last-of-type {
+    margin-bottom: 20px;
+  }
+
+  .theme .what-we-offer .block:hover .subtitle,
+  .theme .what-we-offer .block:focus .subtitle,
+  .theme .what-we-offer .block:active .subtitle {
+    top: calc(50% - 135px);
+  }
+
+  .theme .what-we-offer .block:hover p,
+  .theme .what-we-offer .block:focus p,
+  .theme .what-we-offer .block:active p {
+    top: calc(50% - 55px);
+    max-width: 350px;
+    display: block;
+  }
+
+  .theme .what-we-offer .block:hover .link, 
+  .theme .what-we-offer .block:focus .link, 
+  .theme .what-we-offer .block:active .link {
+    top: calc(50% + 95px);
+  }
+  /* END what we offer */
+
+  /* Begin why choose us */
+  .theme .why-choose-us-body .why-choose-us-banner {
+    height: 600px; 
+  }
+  .theme .why-choose-us {
+    padding-bottom: 125px;
+  }
+  /* END why choose us */
+
+  /* BEGIN client cases */
+  .theme .client-cases {
+    margin-bottom: 120px;
+  }
+
+  .theme .client-cases .tab-content {
+    margin-left: calc(50% - 550px);
+    width: 1100px;
+  }
+  /* END client cases */
+
+  /* BEGIN get in touch */
+  .theme footer {
+    padding-top: 50px;
+  }
+
+  .theme footer .twin-columns .columns:nth-of-type(2) {
+    padding-top: 20px;
+  }
+
+  .theme .get-in-touch .white-block .col-12:first-of-type,
+  .theme .get-in-touch .white-block .col-12:nth-of-type(3) {
+    padding-right: 5px;
+  }
+
+  .theme .get-in-touch .white-block .col-12:nth-of-type(2),
+  .theme .get-in-touch .white-block .col-12:nth-of-type(4) {
+    padding-left: 5px;
+  }  
+  /* END get in touch */
+
+  /* BEGIN get in touch subscribe */
+  .theme .subscribe .blue_block {
+    padding: 25px 10px;
+    height: 460px;
+  }
+  /* END get in touch subscribe */
+
+  /* BEGIN heading */
+  .theme .header .bottom .logo-link {
+    width: 150px !important;
+  }
+  /* END heading */
+
+  /* BEGIN header blw */
+  .theme header.sps--blw .navbar {
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+  /* END header blw */
+
+  /* BEGIN About Us */   
+  .theme .about-us-banner {
+    height: 600px;
+    margin-bottom: 0px;
+  }
+ 
+
+  /* END of About Us */
+
+  /* BEGIN section about */
+  .theme .section-about .container {
+    padding-bottom: 90px;
+  }
+
+  .theme .section-about p {
+    margin-bottom: 0px;
+  }
+  /* END section about */
+
+  /* BEGIN achievements */
+  .theme .achievements .container {
+    margin-bottom: 100px;
+  }
+  /* END achievements */
+
+
+  /* Begin Contact Us */
+  .theme .contact-us-banner {
+    height: 600px;
+  }
+  .theme .contactform .container .row .d-flex { 
+   margin-bottom: 0px;
+  }
+  .theme .contactform .row .right .row { 
+    margin-bottom: 0px;
+  }
+  .theme .contactform .row .left { 
+    margin-bottom: 0px;
+  }
+  .theme .contact-us-banner .left { 
+    margin-top: 0px;
+  }
+  /* End of Contact Us */
+
+
+  /* BEGIN calltoact */
+  .theme .call-to-act {
+    background: url('../../assets/images/call-to-act-desktop-bg.png') no-repeat center center;
+    background-size: cover;
+  }
+
+  .theme .call-to-act .container {
+    padding-bottom: 125px;
+    padding-top: 125px;
+  }
+
+  .theme .call-to-act .title {
+    margin-bottom: 20px;
+  }
+  /* END calltoact */
+
+  /* BEGIN university */
+  .theme .university .container {
+    padding-bottom: 100px;
+    padding-top: 120px;
+  }
+  /* END university */
+
+  /* BEGIN values */
+  .theme .values {
+    padding-bottom: 95px;
+    padding-top: 95px;
+  } 
+  .theme .values .container .row .right-two {
+    margin-top: -100px;
+  }
+  /* END values */
+
+  /* BEGIN client cases page content */
+  .theme .client-cases.page-content .tab-content .carousel-item .col-6:nth-last-of-type(2) {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+
+  .theme .client-cases.page-content .tab-content .carousel-item .col-6:last-of-type {
+    margin-bottom: 20px;
+    margin-right: auto;
+    margin-left: 0px;
+  }
+
+  .theme .client-cases.page-content .tab-content .carousel-item .col-6 {
+    margin-bottom: 30px;
+  }
+
+  .theme .client-cases.page-content .tab-content .carousel-item .col-6:nth-last-of-type(2),
+  .theme .client-cases.page-content .tab-content .carousel-item .col-6:nth-last-of-type(3),
+  .theme .client-cases.page-content .tab-content .carousel-item .col-6:nth-last-of-type(4),
+  .theme .client-cases.page-content .tab-content .carousel-item .col-6:last-of-type {
+    margin-bottom: 0px;
+  }
+
+  .theme .client-cases.page-content .tab-content .carousel-item .block {
+    height: 123px;
+    width: 123px;
+  }
+  /* END client cases page content */
+
+  /* BEGIN page banner */ 
+
+  .theme .why-choose-us-body .why-choose-us-banner .container {
+    padding-top: 0px;
+  }
+  /* END page banner */
+
+  /* BEGIN Our Consultants */
+  .theme .our-consultants .consultant-image {
+    padding-right: 20px;
+  }
+
+  .theme .our-consultants .consultant-details {
+    padding-left: 20px;
+  }
+
+  .theme .consultant p:first-of-type {
+    margin-bottom: 30px;
+  }
+
+  .theme .consultant .right {
+    display: block;
+  }
+  /* END of Our Consultants */
+
+  /* BEGIN impact */
+  .theme .impact {
+    background-size: contain;
+  }
+
+  .theme .impact .container {
+    padding-top: 75px;
+  }
+
+  .theme .impact .title {
+    margin-bottom: 90px;
+  }
+
+  .theme .impact .video {
+    margin-bottom: 60px;
+  }
+
+  .theme .impact p:not(:last-of-type) {
+    margin-bottom: 35px;
+  }
+  /* END impact */
+
+  /* BEGIN training */
+  .theme .training p:not(:last-of-type) {
+    margin-bottom: 30px;
+  }
+  /* END training */
+
+  /* BEGIN innovation */
+  .theme .innovation {
+    background-size: contain;
+  }
+
+  .theme .innovation .container {
+    padding-top: 75px;
+  }
+
+  .theme .innovation .title {
+    margin-bottom: 90px;
+  }
+
+  .theme .innovation p:not(:last-of-type) {
+    margin-bottom: 30px;
+  }
+  /* END innovation */
+
+  /* BEGIN client cases */
+  .theme .client-cases {
+    margin-bottom: 0px;
+  }
+
+  .theme .client-cases .container {
+    margin-bottom: 110px;
+    margin-top: 80px;
+  }
+  /* END client cases */
+
+  /* BEGIN get in touch */
+  .theme .why-choose-us-body .get-in-touch .container {
+    padding-top: 100px;
+  }
+
+  .theme .why-choose-us-body .get-in-touch .intro {
+    margin-bottom: 55px;
+  }
+
+  .theme .why-choose-us-body .get-in-touch .btn {
+    margin: 0px auto;
+    display: block;
+    width: 160px;
+  }
+  /* END get in touch */
+
+  /* Begin Publications  */ 
+  .theme .publication-banner {
+    height: 600px;
+  }
+  .theme .publication-body .tab-content {
+    margin-left: calc(50% - 550px);
+    width: 1100px;
+  } 
+  
+  
+  /* End Publications */
+
+  /* Begin Culture Transformation */ 
+  .theme .culture-transformation-body .culture-transformation-banner { 
+    height: 600px; 
+  }
+  .theme .client-culture {
+    background-size: contain;
+  }
+  .theme .client-culture .video {
+    margin-bottom: 100px;
+  }
+  .theme .client-culture .row .left {
+    padding-left: 0px;
+    padding-right: 20px;
+  }
+
+  .theme .client-culture .row .left .row, 
+  .theme .client-culture .row .middle .row, 
+  .theme .client-culture .row .right .row {
+    height: 100%;
+  }
+  .theme .client-clture .row .middle {
+    padding: 0px 10px;
+  }
+  .theme .client-culture .row .right {
+    padding-right: 0px;
+    padding-left: 20px;
+  }
+
+  .theme .client-culture .white-block .about {
+    margin-top: 20px;
+    margin-bottom: 190px;
+    height: 240px;
+}
+  .theme .client-culture .video {
+    margin-bottom: 100px;
+  }
+
+  .theme .client-culture .sub-title {
+    margin-bottom: 90px;    
+  }       
+  .theme .client-culture .container {
+    padding-top: 75px;
+  }
+
+  /* End of Culture Transformation */
+
+  /* Begin Consultant */
+  .theme .consultant-banner { 
+    height: 690px;
+  }
+
+  .theme .our-consultants .box .row {
+    margin-bottom: 50px;
+  }
+  /* End of Consultant */
+
+  /* Begin Sales Excellence */
+
+  .theme .sales-excellence-body .sales-excellence-banner {
+    height: 600px;
+  } 
+  
+  .theme .client-sales {
+    background-size: contain;
+  }
+
+  .theme .client-sales .container {
+    padding-top: 75px;
+  }
+
+  .theme .client-sales .sub-title {
+    margin-bottom: 90px;
+  }
+
+  .theme .client-sales .video {
+    margin-bottom: 100px;
+  }
+
+  .theme .client-sales p:not(:last-of-type) {
+    margin-bottom: 35px;
+  }
+
+  .theme .client-sales .row .left  {
+    padding-left: 0px;
+    padding-right: 20px;
+  }
+
+  .theme .client-sales .row .middle  {
+    padding: 0px 10px;
+  }
+
+  .theme .client-sales .row .right {
+    padding-right: 0px;
+    padding-left: 20px;
+  }
+
+  .theme .client-sales .row .left .row,
+  .theme .client-sales .row .middle .row,
+  .theme .client-sales .row .right .row {
+    height: 100%;
+  }
+
+  .theme .client-sales .white-block .about {
+    margin-top: 20px;
+    margin-bottom: 100px;   
+    height: 300px; 
+  }
+  /* End of Sales Excellence */
+
+  /* Begin Meet our team */ 
+  .theme .our-team-banner {
+    height: 690px;
+  }  
+  .theme .our-team .container {
+    margin-bottom: 110px;
+    margin-top: 40px;
+  }  
+  .theme .our-team .left {
+    padding-right: 40px;
+  }
+  .theme .our-team .right p {
+    text-align: left;
+  }
+  /* End of Meet our team */
+
+
+  /* Begin Leadership Management */ 
+  .theme .leadership-management-banner { 
+    height: 600px;
+  }
+  .theme .client-leadership .container {
+    padding-top: 75px;
+  }
+  
+  .theme .leadership-management-body .values .row .left {
+      margin-top: 50px;
+  }
+  
+  .theme .client-leadership .sub-title {
+    margin-bottom: 90px;
+  }
+  .theme .client-leadership .video {
+    margin-bottom: 100px;
+  }
+  .theme .client-leadership .row .left {
+    padding-left: 0px;
+    padding-right: 20px;
+  }
+
+  .theme .client-leadership .row .middle {
+    padding: 0px 10px;
+  }
+
+  .theme .client-leadership .row .left .row, 
+  .theme .client-leadership .row .middle .row, 
+  .theme .client-leadership .row .right .row {
+    height: 100%;
+  }
+
+  .theme .client-leadership .white-block .about {
+    margin-top: 20px;
+    margin-bottom: 100px;
+    height: 120px;
+  }
+  .theme .client-leadership .row .left .row, 
+  .theme .client-leadership .row .middle .row,
+  .theme .client-leadership .row .right .row {
+    height: 100%;
+  }
+  .theme .client-leadership {
+    background-size: contain;
+  }
+ 
+
+  /* End of Leadership Management */
+
+ /* Begin Coaching */
+ .theme .client-coaching {
+    background-size: contain;
+  }
+
+  .theme .client-coaching .row .left .row, 
+  .theme .client-coaching .row .middle .row,
+  .theme .client-coaching .row .right .row {
+    height: 100%;
+  }
+
+  .theme .client-coaching .white-block .about {
+    margin-top: 20px;
+    margin-bottom: 70px;
+    height: 300px;
+  }
+
+  .theme .client-coaching .row .middle {
+    padding: 0px 10px;
+  }
+
+  .theme .client-coaching .row .right {
+    padding-right: 0px;
+    padding-left: 20px;
+  }
+  .theme .client-coaching .row .left {
+    padding-left: 0px;
+    padding-right: 20px;
+  }
+  .theme .client-coaching .container {
+    padding-top: 75px;
+  }
+ .theme .coaching-body .coaching-banner {
+    height: 600px; 
+ }
+ 
+ .theme .coaching-body .values .big-img {
+    height: 400px;
+  }
+  /* End of Coaching */
+
+  /* Begin Enterprise Development Grant */
+  .theme .enterprise-development-grant-body .enterprise-development-grant-banner {
+    height: 600px;
+  }
+  .theme .enterprise-development-grant-body .values .body .fourth {
+    margin-bottom: 50px;
+  }
+
+  .theme .enterprise-development-grant-body .values .body .fifth .left {
+    margin-top: -200px;
+  }
+  /* End of Enterprise Development Grant */
+
+  /* Begin Programme Page */
+  .theme  .programme-banner {
+    height: 600px;
+  }
+  /* End of Programme Page */
+}
+
+ 
+
+
+@media only screen and (min-width: 1200px) {
+    
+    /* Begin All of Logos*/
+    .theme .management {
+      margin-bottom: 0px;
+  } 
+  /* End All of Logos*/
+
+  /* BEGIN get in touch */
+  .theme .get-in-touch .white-block {
+    padding: 45px 15px;
+  }
+
+  .theme .get-in-touch .white-block .col-12:first-of-type {
+    padding-right: 5px;
+  }
+
+  .theme .get-in-touch .white-block .col-12:nth-of-type(2) {
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+
+  .theme .get-in-touch .white-block .col-12:nth-of-type(3) {
+    padding-right: 15px;
+    padding-left: 5px;
+  }
+
+  .theme .get-in-touch .white-block .col-12:nth-of-type(4) {
+    padding-right: 5px;
+    padding-left: 15px;
+  }
+
+  .theme .get-in-touch .white-block .col-12:nth-of-type(5) {
+    padding-left: 5px;
+  }
+
+  .theme .get-in-touch .white-block .field:not(textarea) {
+    height: 50px;
+  }
+
+  .theme .get-in-touch .white-block .btn {
+    margin: 0px auto;
+    display: block;
+    width: 160px;
+  }
+  /* END get in touch */
+
+  /* BEGIN get in touch subscribe */
+  .theme .subscribe .blue_block {
+    padding: 25px 10px;
+    height: 460px;
+  }
+  /* END get in touch subscribe */
+
+  /* BEGIN client sales page content */
+  .theme .client-cases.page-content .tab-content .carousel-item .col-6 {
+    max-width: 20%;
+    flex: 20%;
+  }
+
+  .theme .client-cases.page-content .tab-content .carousel-item .col-6:nth-last-of-type(5) {
+    margin-bottom: 0px;
+  }
+
+  .theme .client-cases.page-content .tab-content .carousel-item .block {
+    height: 200px;
+    width: 200px;
+  }
+  /* END client cases page content */ 
+
+  /* BEGIN consulting */
+  .theme .consultant .container {
+    margin-bottom: 100px;
+    padding-top: 120px;
+  }
+  /* END consulting */
+
+  /* BEGIN impact */
+  .theme .impact .video iframe {
+    height: 500px;
+  }
+  /* END impact */
+
+  /* BEGIN innovation */
+  .theme .innovation .container {
+    padding-bottom: 15px;
+  }
+
+  .theme .innovation .title {
+    margin-bottom: 80px;
+  }
+
+  .theme .innovation .video iframe {
+    height: 500px;
+  }
+  /* END innovation */
+
+  /* Begin Why Choose Us */
+  .theme .why-choose-us-body .why-choose-us-banner {
+    margin-top: 75px;
+  }
+
+  /* End of Why Choose Us */
+
+
+  /* Begin About Us */
+  .theme .about-us-banner { 
+    margin-top: 75px;
+  }
+  /* End of About Us */
+
+  /* Begin Contact Us */ 
+  .theme .contact-us-banner {
+    margin-top: 95px;
+  } 
+  .theme .contact-us-banner .left { 
+    margin-top: 0px;
+  }
+  /* End of Contact Us */ 
+
+   /* BEGIN Publications */
+  .theme .publication-banner {
+    margin-top: 75px;
+  }
+
+   .theme .publication-body .page-content .tab-content .carousel-item .col-6 {
+    max-width: 20%;
+    flex: 20%;
+  }
+
+  .theme .publication-body .page-content .tab-content .carousel-item .col-6:nth-last-of-type(5) {
+    margin-bottom: 0px;
+  }
+
+  .theme .publication-body .page-content .tab-content .carousel-item .block {
+    height: 200px;
+    width: 200px;
+  }
+  /* END Publications */
+
+  /* Begin Culture Transformation */
+  .theme .culture-transformation-body .culture-transformation-banner {  
+    margin-top: 75px;
+  }
+  .theme .client-culture .white-block {
+    padding: 45px 15px;
+  }
+  .theme .client-culture .video iframe {
+    height: 500px;
+  }
+  /* End of Culture Transofmation */
+
+  
+  
+  /* Begin Sales Excellence */
+  .theme .sales-excellence-body .sales-excellence-banner {
+    margin-top: 75px;
+  }
+  .theme .client-sales .video iframe {
+    height: 500px;
+  }
+
+  .theme .client-sales .white-block {
+    padding: 45px 15px;
+  }
+  /* End of Sales Excellence */
+
+  /* Begin Enterprise Development Grant */
+  .theme .enterprise-development-grant-body .enterprise-development-grant-banner {
+    margin-top: 75px;
+  } 
+  /* End of Enterprise Development Grant */
+  
+  /* Begin Leadership Management */
+  .theme .client-leadership .white-block {
+    padding: 45px 15px;
+  } 
+  .theme .leadership-management-banner { 
+    margin-top: 75px;
+  }
+  .theme .client-leadership .video iframe {
+    height: 500px;
+  } 
+
+  /* End of Leadership Management */
+
+
+  /* Begin Coaching */ 
+
+  .theme .client-coaching .white-block {
+    padding: 45px 15px;
+  }
+  .theme .coaching-body .coaching-banner { 
+    margin-top: 75px;
+ }
+ .theme .coaching-body .values .big-img {
+    height: 400px;
+  }
+  /* End of Coaching */
+
+  /* Begin Programme Page */
+  .theme  .programme-banner {
+    margin-top: 75px;
+  }
+  /* End of Programme Page */
+}
+
+
+
+
+@media only screen and (min-width: 1400px) {
+ /* Begin Contact */
+  .theme .contactbanner {
+    margin-top: 135px;
+  }
+/* End of Contact */
+}
+
+/* END responsiveness */

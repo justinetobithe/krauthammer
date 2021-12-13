@@ -1,0 +1,162 @@
+<div class="j-1200 m-t-20 order-confirmation-wrap has-shadow" style="font-family: Arial, Helvetica, sans-serif;box-sizing: border-box;padding: 15px 45px;background-color: white;border: 1px solid #cbcbcb;box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0.13);margin-top: 20px;width: 90%;max-width: 1200px;margin: 0 auto;">
+
+    <h1 class="f30 regular bebas" style="font-family: Arial, Helvetica, sans-serif;margin: 0.67em 0;font-size: 30px;font-weight: 400 !important;"> <span class="deepskyblue" style="font-family: Arial, Helvetica, sans-serif;color: #00a1e9;">THANK</span> YOU </h1>
+    <div class="divider" style="font-family: Arial, Helvetica, sans-serif;box-sizing: border-box;width: 100%;height: 1px;background-color: #c1c1c1;"></div>
+    <p class="f14 p-h-15 m-b-20" style="font-family: Arial, Helvetica, sans-serif;margin-bottom: 20px;padding-right: 15px;padding-left: 15px;">
+        Thank you for ordering from {{ company }}. A Copy of your order has been emailed to you. Our Sales office will
+        call you within 1 working day to confirm your order.
+    </p>
+
+    <p class="f14 p-h-15 m-b-20" style="font-family: Arial, Helvetica, sans-serif;margin-bottom: 20px;padding-right: 15px;padding-left: 15px;">
+        Your online order ID is <span class="deepskyblue j-bold" style="font-family: Arial, Helvetica, sans-serif;font-weight: bold;color: #00a1e9;"> {{ order_id }} </span>. An Official invoice will be given to you
+        on delivery date.
+    </p>
+    <p class="f14 p-h-15" style="font-family: Arial, Helvetica, sans-serif;padding-right: 15px;padding-left: 15px;">
+        For changes to your order. You may want to contact us via:
+    </p>
+
+    <div class="j-grids f16 graphik regular bg-gainsboro" style="font-family: 'Graphik';box-sizing: border-box;background-color: #dedede;font-size: 16px;overflow: hidden;clear: both;font-weight: 400 !important;">
+        <div class="j-grid j-grid-lg-1-2 p-v-15 p-h-20" style="font-family: Arial, Helvetica, sans-serif;box-sizing: border-box;padding-right: 20px;padding-left: 20px;padding-bottom: 15px;padding-top: 15px;float: left;display: block;"> <strong style="font-family: Arial, Helvetica, sans-serif;">Email</strong>: {{ company_email }} </div>
+        <div class="j-grid j-grid-lg-1-2 p-v-15 p-h-20" style="font-family: Arial, Helvetica, sans-serif;box-sizing: border-box;padding-right: 20px;padding-left: 20px;padding-bottom: 15px;padding-top: 15px;float: left;display: block;"> <strong style="font-family: Arial, Helvetica, sans-serif;">Enquiry Hotline</strong> : {{ company_contact_number }} </div>
+    </div>
+
+    <p class="f12 i m-t-30" style="font-family: Arial, Helvetica, sans-serif;font-size: 12px;margin-top: 30px;font-style: italic;"><span class="red" style="font-family: Arial, Helvetica, sans-serif;">*</span>Please print this page for reference.</p>
+    <div class="divider m-b-20" style="font-family: Arial, Helvetica, sans-serif;box-sizing: border-box;width: 100%;height: 1px;background-color: #c1c1c1;margin-bottom: 20px;"></div>
+
+    <div class="has-border p-30 " style="font-family: Arial, Helvetica, sans-serif;box-sizing: border-box;border: 1px solid #cbcbcb;padding-right: 30px;padding-left: 30px;padding-bottom: 30px;padding-top: 30px;">
+        <table class="table-colon-separated m-b-30" style="font-family: Arial, Helvetica, sans-serif;font-size: 12px;margin-bottom: 30px;">
+            <tbody style="font-family: Arial, Helvetica, sans-serif;">
+                <tr style="font-family: Arial, Helvetica, sans-serif;">
+                    <td style="font-family: Arial, Helvetica, sans-serif;width: 160px;height: 20px;position: relative;"> Order ID </td>
+                    <td style="font-family: Arial, Helvetica, sans-serif;"> {{ order_id }} </td>
+                </tr>
+                <tr style="font-family: Arial, Helvetica, sans-serif;">
+                    <td style="font-family: Arial, Helvetica, sans-serif;width: 160px;height: 20px;position: relative;"> Name </td>
+                    <td style="font-family: Arial, Helvetica, sans-serif;"> {{ last_name }}, {{ first_name }} </td>
+                </tr>
+                <tr style="font-family: Arial, Helvetica, sans-serif;">
+                    <td style="font-family: Arial, Helvetica, sans-serif;width: 160px;height: 20px;position: relative;"> Email </td>
+                    <td style="font-family: Arial, Helvetica, sans-serif;"> {{ email }} </td>
+                </tr>
+                <tr style="font-family: Arial, Helvetica, sans-serif;">
+                    <td style="font-family: Arial, Helvetica, sans-serif;width: 160px;height: 20px;position: relative;"> Contact </td>
+                    <td style="font-family: Arial, Helvetica, sans-serif;"> {{ phone }} </td>
+                </tr>
+                <tr style="font-family: Arial, Helvetica, sans-serif;">
+                    <td style="font-family: Arial, Helvetica, sans-serif;width: 160px;height: 20px;position: relative;"> Company </td>
+                    <td style="font-family: Arial, Helvetica, sans-serif;"> {{ company }} </td>
+                </tr>
+                <tr style="font-family: Arial, Helvetica, sans-serif;">
+                    <td style="font-family: Arial, Helvetica, sans-serif;width: 160px;height: 20px;position: relative;"> Billing Address </td>
+                    <td style="font-family: Arial, Helvetica, sans-serif;">
+                        {{ billing_address }}, {{ billing_address_2 }}, {{ billing_city }}, {{ billing_country }} </td>
+                </tr>
+                <tr style="font-family: Arial, Helvetica, sans-serif;">
+                    <td style="font-family: Arial, Helvetica, sans-serif;width: 160px;height: 20px;position: relative;"> Billing Postal Code </td>
+                    <td style="font-family: Arial, Helvetica, sans-serif;"> {{ billing_postal }} </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <table class="table-colon-separated" style="font-family: Arial, Helvetica, sans-serif;font-size: 12px;">
+            <thead style="font-family: Arial, Helvetica, sans-serif;">
+                <tr style="font-family: Arial, Helvetica, sans-serif;">
+                    <th class="left bold" style="font-family: Arial, Helvetica, sans-serif;text-align: left;font-weight: bold;">Delivery Details</th>
+                    <th style="font-family: Arial, Helvetica, sans-serif;"></th>
+                </tr>
+            </thead>
+            <tbody style="font-family: Arial, Helvetica, sans-serif;">
+                <tr style="font-family: Arial, Helvetica, sans-serif;">
+                    <td style="font-family: Arial, Helvetica, sans-serif;width: 160px;height: 20px;position: relative;"> Delivery Type </td>
+                    <td style="font-family: Arial, Helvetica, sans-serif;"> {{ shipping_method }} </td>
+                </tr>
+                <tr style="font-family: Arial, Helvetica, sans-serif;">
+                    <td style="font-family: Arial, Helvetica, sans-serif;width: 160px;height: 20px;position: relative;"> Delivery Date </td>
+                    <td style="font-family: Arial, Helvetica, sans-serif;"> dummy </td>
+                </tr>
+                <tr style="font-family: Arial, Helvetica, sans-serif;">
+                    <td style="font-family: Arial, Helvetica, sans-serif;width: 160px;height: 20px;position: relative;"> Delivery Address </td>
+                    <td style="font-family: Arial, Helvetica, sans-serif;">
+                        {{ shipping_address }}, {{ shipping_address_2 }}, {{ shipping_city }}, {{ shipping_country }}
+                    </td>
+                </tr>
+                <tr style="font-family: Arial, Helvetica, sans-serif;">
+                    <td style="font-family: Arial, Helvetica, sans-serif;width: 160px;height: 20px;position: relative;"> Postal Code </td>
+                    <td style="font-family: Arial, Helvetica, sans-serif;"> {{ shipping_postal }} </td>
+                </tr>
+                <tr style="font-family: Arial, Helvetica, sans-serif;">
+                    <td style="font-family: Arial, Helvetica, sans-serif;width: 160px;height: 20px;position: relative;"> Type of Delivery </td>
+                    <td style="font-family: Arial, Helvetica, sans-serif;"> dummy </td>
+                </tr>
+                <tr style="font-family: Arial, Helvetica, sans-serif;">
+                    <td style="font-family: Arial, Helvetica, sans-serif;width: 160px;height: 20px;position: relative;"> Delivery Time </td>
+                    <td style="font-family: Arial, Helvetica, sans-serif;"> dummy </td>
+                </tr>
+                <tr style="font-family: Arial, Helvetica, sans-serif;">
+                    <td style="font-family: Arial, Helvetica, sans-serif;width: 160px;height: 20px;position: relative;"> Remarks </td>
+                    <td style="font-family: Arial, Helvetica, sans-serif;"> dummy </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h5 class="p-l-15" style="font-family: Arial, Helvetica, sans-serif;padding-left: 15px;"> E &amp; OE </h5>
+
+    <table class="table-default fullwidth cells-f12" style="font-family: Arial, Helvetica, sans-serif;border-collapse: collapse;width: 100%;">
+        <thead class="bg-gainsboro left" style="font-family: Arial, Helvetica, sans-serif;background-color: #dedede;text-align: left;">
+            <tr style="font-family: Arial, Helvetica, sans-serif;">
+                <th style="font-family: Arial, Helvetica, sans-serif;border-bottom: 1px solid #e8e8e8;font-size: 14px;padding: 15px;"> Model </th>
+                <th style="font-family: Arial, Helvetica, sans-serif;border-bottom: 1px solid #e8e8e8;font-size: 14px;padding: 15px;"> Qty </th>
+                <th style="font-family: Arial, Helvetica, sans-serif;border-bottom: 1px solid #e8e8e8;font-size: 14px;padding: 15px;"> Description </th>
+                <th style="font-family: Arial, Helvetica, sans-serif;border-bottom: 1px solid #e8e8e8;font-size: 14px;padding: 15px;"> Unit Price </th>
+                <th style="font-family: Arial, Helvetica, sans-serif;border-bottom: 1px solid #e8e8e8;font-size: 14px;padding: 15px;"> Total </th>
+            </tr>
+        </thead>
+        <tbody style="font-family: Arial, Helvetica, sans-serif;">
+        <!-- item_start -->
+        <tr style="font-family: Arial, Helvetica, sans-serif;">
+        <td class="uc" style="font-family: Arial, Helvetica, sans-serif;text-transform: uppercase;border-bottom: 1px solid #e8e8e8;font-size: 12px;padding: 15px;"> {{ item_name }} </td>
+        <td style="font-family: Arial, Helvetica, sans-serif;border-bottom: 1px solid #e8e8e8;font-size: 12px;padding: 15px;"> {{ item_quantity }} </td>
+        <td style="font-family: Arial, Helvetica, sans-serif;border-bottom: 1px solid #e8e8e8;font-size: 12px;padding: 15px;"> {{ item_description }} </td>
+        <td style="font-family: Arial, Helvetica, sans-serif;border-bottom: 1px solid #e8e8e8;font-size: 12px;padding: 15px;"> {{ item_price }} </td>
+        <td style="font-family: Arial, Helvetica, sans-serif;border-bottom: 1px solid #e8e8e8;font-size: 12px;padding: 15px;"> {{ item_subtotal }} </td>
+        </tr>
+        <!-- item_end -->
+        </tbody>
+    </table>
+
+
+
+    <div class="j-grids m-v-30" style="font-family: Arial, Helvetica, sans-serif;box-sizing: border-box;margin-top: 30px;overflow: hidden;clear: both;margin-bottom: 30px;">
+        <div class="j-grid j-grid-lg-1-3 has-border p-15" style="font-family: Arial, Helvetica, sans-serif;box-sizing: border-box;border: 1px solid #cbcbcb;padding-bottom: 15px;padding-top: 15px;padding-right: 15px;padding-left: 15px;float: left;display: block;">
+            <table class="fullwidth f12 cells-p-5" style="font-family: Arial, Helvetica, sans-serif;font-size: 12px;width: 100%;">
+                <tbody style="font-family: Arial, Helvetica, sans-serif;">
+                    <tr style="font-family: Arial, Helvetica, sans-serif;">
+                        <td style="font-family: Arial, Helvetica, sans-serif;"> Gross Total </td>
+                        <td class="right" style="font-family: Arial, Helvetica, sans-serif;"> {{ gross_total }} </td>
+                    </tr>
+                    <tr style="font-family: Arial, Helvetica, sans-serif;">
+                        <td style="font-family: Arial, Helvetica, sans-serif;"> Delivery Charge </td>
+                        <td class="right" style="font-family: Arial, Helvetica, sans-serif;"> {{ delivery_charge }} </td>
+                    </tr>
+                    <tr style="font-family: Arial, Helvetica, sans-serif;">
+                        <td style="font-family: Arial, Helvetica, sans-serif;"> </td>
+                        <td class="center" style="font-family: Arial, Helvetica, sans-serif;">
+                            <p class="f24 bebas regular m-v-5" style="font-family: Arial, Helvetica, sans-serif;font-weight: 400 !important;">NET TOTAL</p>
+                            <p class="f30 bebas regular deepskyblue m-v-5" style="font-family: Arial, Helvetica, sans-serif;font-size: 30px;color: #00a1e9;font-weight: 400 !important;"> {{ net_total }} </p>
+                        </td>
+                    </tr>
+                    <tr style="font-family: Arial, Helvetica, sans-serif;">
+                        <td class="i" style="font-family: Arial, Helvetica, sans-serif;font-style: italic;"> GST {{ tax_rate }}% (Inclusive GST) </td>
+                        <td class="right" style="font-family: Arial, Helvetica, sans-serif;"> {{ tax_percentage }} </td>
+                    </tr>
+                    <tr style="font-family: Arial, Helvetica, sans-serif;">
+                        <td class="bold" style="font-family: Arial, Helvetica, sans-serif;font-weight: bold;"> PAYMENT METHOD </td>
+                        <td class="right" style="font-family: Arial, Helvetica, sans-serif;"> {{ payment_method }} </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+    </div>
+</div>

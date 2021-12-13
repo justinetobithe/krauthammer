@@ -1,0 +1,1 @@
+<div class="well">Order Confirmed. <a href="<?php echo bloginfo('baseurl'); ?>">Home</a></div>

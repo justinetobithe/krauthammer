@@ -1,0 +1,284 @@
+/* START General Styles */
+.custom *, 
+.custom .trans,
+.custom *:hover {
+  -webkit-transition: all .25s ease-in-out;
+  -moz-transition: all .25s ease-in-out;
+  -ms-transition: all .25s ease-in-out;
+  -o-transition: all .25s ease-in-out;
+  transition: all .25s ease-in-out;
+}
+
+.custom p,
+.custom ul,
+.custom ol,
+.custom h1,
+.custom h2,
+.custom h3,
+.custom h4,
+.custom h5,
+.custom h6,
+.custom .form-group {
+  margin-bottom: 0px;
+}
+
+.custom p {
+  text-align: left;
+}
+
+.custom a {
+  color: inherit;
+}
+
+.custom a:hover,
+.custon a:focus,
+.custom a:active {
+  text-decoration: none;
+}
+
+.custom .btn:hover,
+.custom .btn:focus,
+.custom .btn:active {
+  outline: 0px;
+}
+
+.custom .breadcrumb {
+  background: transparent;
+  border-radius: 0px;
+}
+
+.custom .nopadding-xs {
+  padding: 0px;
+}
+
+.custom .btn-center {
+  margin: 0px auto;
+  display: block;
+}
+/* END General Styles */
+
+/* BEGIN 5 columns */
+.custom .col-xs-5th,
+.custom .col-sm-5th,
+.custom .col-md-5th,
+.custom .col-lg-5th {
+  padding-right: 15px;
+  padding-left: 15px;
+  position: relative;
+  min-height: 1px;
+}
+/* 
+.custom .col-5th {
+float: left;
+} */
+/* END 5 columns */
+
+/* BEGIN 3 columns */
+.custom .col-xs-3rd {
+  width: 33.33%;
+}
+/* END 3 columns */
+
+/* START ScrollPosStyler */
+.sps {
+  transition: all 0.25s ease-in-out;
+  z-index: 9999;
+  width: 100%;
+  top: auto;
+  left: 0;
+}
+
+.sps.sps--blw {
+  position: fixed;
+  top: 0px;
+}
+/* END ScrollPosStyler */
+
+/* START responsive styles */
+@media screen and (max-width: 576px) { /* only mobile devices */
+  /* BEGIN general purpose */
+  .custom .nopadding {
+    padding: 0px;
+  }
+
+  .custom .nopadding-left {
+    padding-left: 0px;
+  }
+
+  .custom .nopadding-right {
+    padding-right: 0px;
+  }
+  /* END general purpose */
+
+  /* BEGIN 5 columns */
+  .custom .col-5th {
+    float: left;
+    width: 20%;
+  }
+  /* END 5 columns */
+
+  /* BEGIN 3 columns */
+  .custom .col-3rd {
+    width: 33.33%;
+  }
+  /* END 3 columns */
+}
+
+@media screen and (max-width: 768px) { /* only small devices */
+  /* BEGIN general purpose */
+  .custom .nopadding-sm {
+    padding: 0px;
+  }
+
+  .custom .nopadding-sm-left {
+    padding-left: 0px;
+  }
+
+  .custom .nopadding-sm-right {
+    padding-right: 0px;
+  }
+
+  .custom p {
+    text-align: left;
+  }
+
+  .custom h1,
+  .custom h2,
+  .custom h3,
+  .custom h4,
+  .custom h5,
+  .custom h6 {
+    text-align: left;
+  }
+  /* END general purpose */
+
+  /* BEGIN 3 columns */
+  .custom .col-md-half-3rd {
+    width: 16.5%;
+  }
+  /* END 3 columns */
+
+  /* BEGIN 5 columns */
+  .custom .col-sm-5th {
+    width: 20%;
+  }
+  /* END 5 columns */
+
+  /* BEGIN 3 columns */
+  .custom .col-sm-3rd {
+    width: 33.33%;
+  }
+  /* END 3 columns */
+}
+
+@media screen and (min-width: 768px) { /* bordering small devices */
+  /* BEGIN general purpose */
+  .custom .nopadding-md {
+    padding: 0px;
+  }
+
+  .custom .nopadding-md-left {
+    padding-left: 0px;
+  }
+
+  .custom .nopadding-md-right {
+    padding-right: 0px;
+  }
+
+  .custom p {
+    text-align: left;
+  }
+
+  .custom .btn-center {
+    display:inline-block;
+    margin: 0px;
+  }
+
+  .custom .btn-center-md {
+    margin: 0px auto;
+    display: block;
+  }
+  /* END general purpose */
+
+  /* BEGIN 5 columns */
+  .custom .col-md-5th {
+    width: 20%;
+  }
+  /* END 5 columns */
+
+  /* BEGIN 3 columns */
+  .custom .col-md-half-3rd {
+    width: 16.5%;
+  }
+  .custom .col-md-3rd {
+    width: 33.33%;
+  }
+  /* END 3 columns */
+}
+
+@media (min-width: 992px) {   /* bordering tablet view */
+  /* BEGIN general purpose */
+  .custom .nopadding-lg {
+    padding: 0px;
+  }
+
+  .custom .nopadding-lg-left {
+    padding-left: 0px;
+  }
+
+  .custom .nopadding-lg-right {
+    padding-right: 0px;
+  }
+  /* END general purpose */
+
+  /* BEGIN 5 columns */
+  .custom .col-lg-5th {
+    width: 20%;
+  }
+  /* END 5 columns */
+
+  /* BEGIN 3 columns */
+  .custom .col-lg-half-3rd {
+    width: 16.5%;
+  }
+
+  .custom .col-lg-3rd {
+    width: 33.33%;
+  }
+  /* END 3 columns */
+}
+
+@media (min-width: 1200px) {    /* bordering desktop view */
+  /* BEGIN general purpose */
+  .custom .nopadding-xl {
+    padding: 0px;
+  }
+
+  .custom .nopadding-xl-left {
+    padding-left: 0px;
+  }
+
+  .custom .nopadding-xl-right {
+    padding-right: 0px;
+  }
+  /* END general purpose */
+
+  /* BEGIN 5 columns */
+  .custom .col-xl-5th {
+    max-width: 20%;
+    width: 20%;
+  }
+  /* END 5 columns */
+
+  /* BEGIN 3 columns */
+  .custom .col-xl-3rd {
+    width: 33.33%;
+  }
+  /* END 3 columns */
+
+  .custom .container {
+    max-width: 1180px;
+    width: 1180px;
+  }
+}
+/* END responsive styles */

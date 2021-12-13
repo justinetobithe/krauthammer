@@ -1,0 +1,40 @@
+#media-gallery-container{
+  display: table;
+  width: 100%;
+}
+#media-gallery{
+  list-style-type: none;
+}
+#media-gallery li{
+  float: left;
+  width: 100px;
+  height: 100px;
+  border: solid 2px #ffffff;
+  margin-bottom: 5px;
+}
+#media-gallery li:hover{
+  border: solid 2px #c1c1c1;
+}
+#media-gallery li a{
+  width: 100px;
+  height: 100px;
+  float: left;
+  overflow: hidden;
+}
+#media-gallery li>a>img{
+  max-width: 100%;
+}
+
+#media-filter-container{
+  font-family: arial;
+  padding: 20px 10px;
+}
+
+#action-container{
+  padding: 20px 40px;
+}
+button{
+  background: #ffffff;
+  padding: 10px;
+  border: solid 2px #f0f0f0;
+}

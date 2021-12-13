@@ -1,0 +1,19 @@
+#patch-prev-container hr{
+  margin: 2px 0;
+}
+.update-log{
+  margin: 5px;
+}
+.update-log:hover{
+  background-color: #f9f9f9;
+}
+
+.update-log p{
+  margin: 0;
+}
+.update-log ul>li{
+  font-size: 12px;
+}
+#patch-prev-container-pagination-container{
+  text-align: center;
+}

@@ -1,0 +1,467 @@
+
+/** The vertical centered content **/
+html.bootstrap-admin-vertical-centered {
+    height: 100%;
+    overflow: hidden;
+    min-height: 100%;
+    min-width: 100%;
+    width: 100%;
+}
+html.bootstrap-admin-vertical-centered body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+html.bootstrap-admin-vertical-centered .container{
+    display: table;
+    height: 100%;
+    padding: 0;
+    width: 100%;
+}
+html.bootstrap-admin-vertical-centered .container .row{
+    display: table-cell;
+    height: 100%;
+    vertical-align: middle;
+}
+
+/** Body **/
+body{
+    background-color: rgba(245, 245, 245, 0.5);
+    padding-top: 70px; /* Required, because main menu / navbar has "navbar-fixed-top" class and is sticked to the top */
+}
+body.bootstrap-admin-with-small-navbar{
+    padding-top: 95px;
+}
+
+/** Main container **/
+#content {
+    margin-left: 0px;
+}
+
+/** Forms */
+.form-group label.control-label{
+    line-height: normal;
+}
+.form-group label{
+    line-height: 25px;
+}
+
+/** Title of container for lists, some content etc. **/
+.bootstrap-admin-box-title{
+    display: inline;
+}
+
+/** Title of the content */
+.bootstrap-admin-content-title h1{
+    display: inline-block;
+    margin-top: 0;
+}
+.bootstrap-admin-content-title .action{
+    float: right;
+    margin-right: 10px;
+    position: relative;
+    top: 5px;
+}
+.bootstrap-admin-content-title .action:first-of-type{
+    margin-right: 0;
+}
+.bootstrap-admin-content-title .action.btn{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/** Button which is an action */
+.btn.action:active{
+    box-shadow: none;
+}
+
+/** Content of the panel **/
+.bootstrap-admin-panel-content{
+    padding: 15px;
+}
+.bootstrap-admin-panel-content table{
+    margin-bottom: 0;
+}
+
+/** Panel with no-table content **/
+.bootstrap-admin-no-table-panel,
+.bootstrap-admin-no-table-panel-content{
+    float: left;
+    width: 100%;
+}
+
+/** Left, the first, column **/
+.bootstrap-admin-col-left{
+    padding-left: 0;
+}
+
+/** Horizontal navbars */
+.bootstrap-admin-navbar-sm{
+    background-image: none;
+    border: 0;
+    box-shadow: initial;
+    margin-bottom: 0;
+    min-height: initial;
+    z-index: 1030;
+}
+.bootstrap-admin-navbar-sm .navbar-collapse .navbar-nav:first-child{
+    margin-left: -15px;
+}
+.bootstrap-admin-navbar-sm .navbar-collapse .navbar-nav li a{
+    font-size: 13px;
+    padding: 3px 8px;
+}
+.bootstrap-admin-navbar-under-small{
+    top: 25px;
+    z-index: 1020;
+}
+
+/** Side Bar **/
+.bootstrap-admin-navbar-side {
+    background-color: #fff;
+    max-height: none;
+    max-width: 228px;
+    padding: 0;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    -webkit-box-shadow: 0 1px 4px rgba(0,0,0,.065);
+    -moz-box-shadow: 0 1px 4px rgba(0,0,0,.065);
+    box-shadow: 0 1px 4px rgba(0,0,0,.065);
+}
+.bootstrap-admin-navbar-side > li > a {
+    display: block;
+    width: 190px\9;
+    margin: 0 0 -1px;
+    padding: 8px 14px;
+    border: 1px solid #e5e5e5;
+}
+.bootstrap-admin-navbar-side > li:first-child > a {
+    -webkit-border-radius: 6px 6px 0 0;
+    -moz-border-radius: 6px 6px 0 0;
+    border-radius: 6px 6px 0 0;
+}
+.bootstrap-admin-navbar-side > li:last-child > a {
+    -webkit-border-radius: 0 0 6px 6px;
+    -moz-border-radius: 0 0 6px 6px;
+    border-radius: 0 0 6px 6px;
+}
+.bootstrap-admin-navbar-side > .active > a,
+.bootstrap-admin-navbar-side .active a:hover{
+    background-color: #2b7dbc;
+    color: #fff;
+}
+.bootstrap-admin-navbar-side > .active > a {
+    position: relative;
+    z-index: 2;
+    padding: 9px 15px;
+    border: 0;
+    text-shadow: 0 1px 0 rgba(0,0,0,.15);
+    -webkit-box-shadow: inset 1px 0 0 rgba(0,0,0,.1), inset -1px 0 0 rgba(0,0,0,.1);
+    -moz-box-shadow: inset 1px 0 0 rgba(0,0,0,.1), inset -1px 0 0 rgba(0,0,0,.1);
+    box-shadow: inset 1px 0 0 rgba(0,0,0,.1), inset -1px 0 0 rgba(0,0,0,.1);
+}
+
+/** Side Bar - Chevrons **/
+.bootstrap-admin-navbar-side .glyphicon-chevron-right {
+    float: right;
+    margin-top: 2px;
+    margin-right: -6px;
+    opacity: .25;
+}
+.bootstrap-admin-navbar-side > li > a:hover {
+    background-color: #f5f5f5;
+}
+.bootstrap-admin-navbar-side a:hover .glyphicon-chevron-right {
+    opacity: .5;
+}
+.bootstrap-admin-navbar-side .active .glyphicon-chevron-right,
+.bootstrap-admin-navbar-side .active a:hover .glyphicon-chevron-right {
+    opacity: 1;
+}
+.bootstrap-admin-navbar-side.affix {
+    top: 40px;
+}
+.bootstrap-admin-navbar-side.affix-bottom {
+    position: absolute;
+    top: auto;
+    bottom: 270px;
+}
+
+/** Thin navbar, e.g. for the breadcrumbs **/
+.bootstrap-admin-navbar-thin{
+    min-height: 0;
+}
+
+/** Breadcrumbs **/
+.bootstrap-admin-breadcrumb{
+    background: none;
+    margin: 8px 15px;
+    padding: 0;
+}
+
+/** Alert **/
+.bootstrap-admin-alert{
+    padding: 10px 15px;
+}
+.bootstrap-admin-alert h4{
+    margin-bottom: 3px;
+}
+
+/** Skip padding of elements on the edge **/
+.bootstrap-admin-no-edges-padding > div:first-child{
+    padding-left: 0;
+}
+.bootstrap-admin-no-edges-padding > div:last-child{
+    padding-right: 0;
+}
+
+/** Light, small paddings **/
+.bootstrap-admin-light-padding-bottom{
+    padding-bottom: 10px;
+}
+.bootstrap-admin-light-padding-top{
+    padding-top: 10px;
+}
+
+/** Footer **/
+footer p{
+    text-align: right;
+}
+
+/** Bootstrap 3 Typeahead plugin **/
+.typeahead{
+    z-index: 1051;
+}
+
+/** Disabling padding **/
+.bootstrap-admin-without-padding{
+    padding: 0;
+}
+
+/** Login form **/
+.bootstrap-admin-login-form{
+    max-width: 400px;
+    padding: 30px;
+    margin: 0 auto;
+    background-color: #FFF;
+    border: 1px solid #E5E5E5;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+.bootstrap-admin-login-form h1{
+    margin-bottom: 25px;
+    margin-top: 0;
+}
+.bootstrap-admin-login-form .form-group{
+    margin-bottom: 20px;
+}
+.bootstrap-admin-login-form label{
+    font-size: 15px;
+}
+.bootstrap-admin-login-form input[type="text"],
+.bootstrap-admin-login-form input[type="password"]{
+    font-size: 16px;
+    height: auto;
+    padding: 7px 9px;
+}
+.bootstrap-admin-login-form input[type="checkbox"]{
+    margin-right: 5px;
+}
+
+.navbar-default{
+    background-color:#438eb9;
+}
+
+.navbar-brand{
+    color:#ffffff !important;
+}
+
+
+li.active ul {
+    list-style-type:none;
+    margin:0;
+    padding:0;
+}
+
+ li.active ul li a{
+    text-decoration: none;
+    font-size:10.5pt;
+}
+
+ li.active ul li a div{
+    width:180px;
+    background: #fdfdfd;
+    height:25px;
+    border-left:1px solid #ddd;
+    border-right:1px solid #ddd;
+    background:#fff;
+ }
+ /* #eff4f8; */
+li.active ul li a:hover div{
+    background: #eff4f8;
+    text-decoration: none;
+    color:#444;
+}
+
+li.active ul li a div span{
+    margin-left:20px;
+   vertical-align: middle;
+} 
+
+.i_active{
+  color:#444; 
+  font-weight:bold;
+}
+
+
+.dropdown-menu{
+    margin-left:182px;
+    margin-top:-38px;
+ }
+
+ .dropdown-menu li a{
+    color:#428bca;
+ }
+
+ .dropdown-menu li a:hover{
+     background: #eff4f8;
+     color:#444;
+ }
+
+ .required{
+    color:#d2423e;
+    font-size:10pt;
+ }
+
+
+/* ****** */
+tr:hover td.rowTable{
+          background: #f5f5f5;
+          color: black;
+}
+
+
+
+.even { background-color: #fdfdfd; }
+.odd { background-color: transparent; }
+
+.not_found{
+    color:#b94a48;
+    font-weight: bold;
+}
+
+tr td input[type='checkbox']{
+   vertical-align:middle;
+}
+ .navbar-path{
+    background-color:#fff;
+    box-shadow:0px 0px 3px #ccc;
+}
+
+/**
+* User page
+*/
+
+/*.row_actions_users{
+   float:right;
+   position:relative;
+   margin-right:92px;
+   margin-top:-18px; 
+   visibility:hidden;
+ }
+
+
+ tr td img{
+   width:40px;height:40px;padding-right:5px;
+}*/
+
+ tr td img{
+   width:40px;height:40px;padding-right:5px;
+}
+.rowDataTable{
+    display:table;
+}
+
+.rowDataRow{
+    display:table-row;
+}
+
+.rowDataColumn{
+    display:table-cell;
+}
+
+
+ 
+
+
+
+/**
+* Posts Page
+**/
+
+.row_actions_posts{
+   float:left;
+   position:relative;
+   margin-top:2px; 
+   visibility:hidden;
+ }
+
+ /**
+* Posts Page
+**/
+
+.row_actions_categories{
+   float:left;
+   position:relative;
+   margin-top:2px; 
+    visibility:hidden; 
+ }
+ 
+ 
+ /**
+ * Category Page
+ **/
+ 
+ .searchCategory{
+     float:right;
+     padding-bottom: 5px;
+     margin-right:-34px;
+ }
+ 
+ .addCategory{
+     float:left;
+ }
+
+ 
+ #search {
+    padding: 3px 24px 3px 3px;
+}
+
+#clear {
+    text-indent: -1000em;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    background-image: url(../../assets/images/cross.png);
+    background-repeat: no-repeat;
+    position: relative;
+    left: -68px;
+    top: 3px;
+    visibility: hidden;
+}
+
+
+.hide{
+    visibility: hidden;
+}
+ 
+ 
+
+
+

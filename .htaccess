@@ -1,0 +1,27 @@
+<IfModule mod_rewrite.c>
+	RewriteEngine On 
+	RewriteBase /krauthammer//
+	RewriteCond %{REQUEST_FILENAME} !-d 
+	RewriteRule ^controllers/(.*)$ index.php?url=$1 [L,QSA]
+	RewriteRule ^libraries/(.*)$ index.php?url=$1 [L,QSA]
+	RewriteRule ^models/(.*)$ index.php?url=$1 [L,QSA]
+	RewriteRule ^admin/(.*)$ index.php?url=$1 [L,QSA]
+	RewriteCond %{REQUEST_FILENAME} !-f
+	RewriteCond %{REQUEST_FILENAME} !-d
+	RewriteRule ^thumbnails/(.*)$ thumbnails/index.php?thumb=$1 [L,QSA]
+	#Sitemap START
+	RewriteCond %{REQUEST_FILENAME} !-f
+	RewriteCond %{REQUEST_FILENAME} !-d
+	RewriteRule ^sitemap.xml$ xmls/sitemap.xml?url=$1 [L,QSA]
+	RewriteRule ^sitemap.xsl$ xmls/sitemap.xsl?url=$1 [L,QSA]
+	RewriteRule ^sitemap-index.xml$ xmls/sitemap-index.xml?url=$1 [L,QSA]
+	#Sitemap END
+	#RewriteCond %{REQUEST_URI} !\.(js|ico|gif|jpg|png|css|swf|flv|xml|woff2|woff|ttf)$
+	#RewriteCond $1 !^(index\.php|images|robots\.txt)
+	#RewriteRule ^controllers/(.*)$ index.php?url=$1 [L,QSA]
+	RewriteCond %{REQUEST_FILENAME} !-d 
+	RewriteCond %{REQUEST_FILENAME} !-f 
+	RewriteCond %{REQUEST_FILENAME} !-l 
+	RewriteRule ^(.+)$ index.php?url=$1 [QSA,L]
+</IfModule>
+Options -indexes

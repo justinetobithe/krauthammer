@@ -1,0 +1,138 @@
+ .required{
+    color:#d2423e;
+    font-size:10pt;
+ }
+ 
+ 
+/* ****** */
+tr:hover td.rowTable{
+          background: #f5f5f5;
+          color: black;
+}
+
+.even { background-color: #fdfdfd; }
+.odd { background-color: transparent; }
+
+.not_found{
+    color:#b94a48;
+    font-weight: bold;
+}
+
+tr td input[type='checkbox']{
+   vertical-align:middle;
+   text-align:center;
+}
+ .navbar-path{
+    background-color:#fff;
+    box-shadow:0px 0px 3px #ccc;
+}
+
+/**
+* User page
+*/
+/*.row_actions_users{
+   float:right;
+   position:relative;
+   margin-right:118px;
+   margin-top:-18px; 
+   visibility:hidden;
+ }
+ 
+ .edit_admin{
+   margin-right:90px;
+ }
+
+
+
+*/
+ tr td img{
+   min-width:40px;
+   min-height:40px;
+}
+td.rowTable div {
+    display:table;
+}
+
+td.rowTable div div {
+    display:table-row;
+}
+
+td.rowTable div div div{
+    display:table-cell;
+    padding-right:5px;
+    vertical-align:top;
+}
+
+.row_actions{
+   min-width:144px; 
+    height:26px;
+ }
+ 
+
+.row_actions_users{
+min-width:144px; 
+height:26px;
+}
+
+td.rowTable div div div a.btn{
+     visibility: hidden;
+}
+
+/**
+* Posts Page
+**/
+
+.row_actions_posts{
+  min-width:144px; 
+    height:26px;    
+ }
+
+ /**
+* Posts Page
+**/
+
+.row_actions_categories{
+   min-width:144px; 
+    height:26px;
+ }
+ 
+ 
+ /**
+ * Category Page
+ **/
+ 
+ .searchCategory{
+     float:right;
+     padding-bottom: 5px;
+     margin-right:-34px;
+ }
+ 
+ .addCategory{
+     float:left;
+ }
+
+ 
+ #search {
+    padding: 3px 24px 3px 3px;
+}
+
+#clear {
+    text-indent: -1000em;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    background-image: url(../../assets/images/cross.png);
+    background-repeat: no-repeat;
+    position: relative;
+    left: -68px;
+    top: 3px;
+    visibility: hidden;
+}
+
+
+.hide{
+    visibility: hidden;
+}
+ .show{
+    visibility: visible;
+}

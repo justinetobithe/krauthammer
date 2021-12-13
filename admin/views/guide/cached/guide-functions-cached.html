@@ -1,0 +1,425 @@
+<div class="row-fluid"><div class="span12 well well-small">
+@var cms_posts_retrieved should be false, but it will be set to true if there are post or page is found</div></div>
+<div class="row-fluid"><div class="span12 well well-small">
+@var cms_posts should be null, but it will be set value if cms_posts_retrieved is true</div></div>
+<div class="row-fluid"><div class="span12 well well-small">
+@var cms_current_post should be null, but it will be set if post is selected</div></div>
+<div class="row-fluid"><div class="span12 well well-small">
+@var cms_query_filters array, set to query filters</div></div>
+<div class="row-fluid"><div class="span12 well well-small">
+@var cms_theme_file_path: is the directory of active theme</div></div>
+<div class="row-fluid"><div class="span12 well well-small">
+@var cms_blog_post_limit: is used in function cms_have_posts to limit the query of posts per page</div></div>
+<div class="row-fluid"><div class="span12 well well-small">
+@var cms_page_offset: is used in function cms_have_posts. related to pagination event</div></div>
+<div class="row-fluid"><div class="span12 well well-small">
+@var cms_enable_honey_pot: is used in function cms_have_posts. related to pagination event</div></div>
+<div class="row-fluid"><div class="span12 well well-small">
+@var cms_current_language: contain the current selected language</div></div>
+<div class="row-fluid"><div class="span12 well well-small">
+@var cms_default_language: contain the systems default language</div></div>
+<div class="row-fluid"><div class="span12 well well-small">
+@var cms_reserved_language: contain the systems reserved language</div></div>
+<div class="row-fluid"><div class="span12 well well-small">
+get_bloginfo: will echo the template directory or installation url
+ @param string - [ baseurl / template_directory / installation_url]
+ Here is an inline example:
+ <pre>
+ bloginfo('installation_url')
+ </pre>  
+ @return void</div></div>
+<div class="row-fluid"><div class="span12 well well-small">
+cms_apply_thumbnail: will return the url of the thumbnail
+ Here is an inline example:
+ <pre>
+ 
+      echo  cms_apply_thumbnail($options = array());
+ 
+ </pre>
+ @return string</div></div>
+<div class="row-fluid"><div class="span12 well well-small">
+get_current_url: will return the current url 
+ Here is an inline example:
+ <pre>
+ 
+      echo  get_current_url();
+ 
+ </pre> 
+ @return string</div></div>
+<div class="row-fluid"><div class="span12 well well-small">
+get_current_uri: will return the current URI 
+ Here is an inline example:
+ <pre>
+ 
+      echo  get_current_uri();
+ 
+ </pre> 
+ @return string</div></div>
+<div class="row-fluid"><div class="span12 well well-small">
+bloginfo: will echo the template directory or installation url
+ @param string - [ baseurl / template_directory / installation_url]
+ Here is an inline example:
+ <pre>
+ bloginfo('installation_url')
+ </pre>  
+ @return void</div></div>
+<div class="row-fluid"><div class="span12 well well-small">
+cms_initialize: will initialized some variables 
+ @return void</div></div>
+<div class="row-fluid"><div class="span12 well well-small">
+cms_set_page_offset: set the current page index 
+ @return int</div></div>
+<div class="row-fluid"><div class="span12 well well-small">
+cms_current_page_offset: get the current page index 
+ @return int</div></div>
+<div class="row-fluid"><div class="span12 well well-small">
+cms_have_next_page_offset: test if has next page index 
+ @return boolean</div></div>
+<div class="row-fluid"><div class="span12 well well-small">
+cms_next_page_offset: get the next page index 
+ @return int</div></div>
+<div class="row-fluid"><div class="span12 well well-small">
+cms_have_prev_page_offset: check if has the previous page index 
+ @return boolean</div></div>
+<div class="row-fluid"><div class="span12 well well-small">
+cms_prev_page_offset: get the previous page index 
+ @return int</div></div>
+<div class="row-fluid"><div class="span12 well well-small">
+cms_get_max_post_offset: get the max offset (max number of pages)
+ @return int</div></div>
+<div class="row-fluid"><div class="span12 well well-small">
+cms_get_posts_count: get the total number posts of the current query
+ @return int</div></div>
+<div class="row-fluid"><div class="span12 well well-small">
+cms_query_posts: will query to know if there is a post 
+ Here is an inline example:
+ <pre>
+ 
+   cms_query_posts($str_query);
+ 
+ </pre> 
+ @return void</div></div>
+<div class="row-fluid"><div class="span12 well well-small">
+cms_is_page: if the post is page then it will return true
+ Here is an inline example:
+ <pre>
+ 
+  if(cms_is_page($id)){}
+ 
+ </pre> 
+ @return boolean</div></div>
+<div class="row-fluid"><div class="span12 well well-small">
+cms_have_posts: check if there is/are post/s exist
+ Here is an inline example:
+ <pre>
+ 
+  if(cms_have_posts()){}
+ 
+ </pre> 
+ @return boolean</div></div>
+<div class="row-fluid"><div class="span12 well well-small">
+cms_post_count: return count of all the post
+ Here is an inline example:
+ <pre>
+ 
+  if(cms_post_count() > 0){}
+ 
+ </pre> 
+ @return int</div></div>
+<div class="row-fluid"><div class="span12 well well-small">
+cms_the_post: will shift the arrays to the current array
+ Here is an inline example:
+ <pre>
+ 
+  cms_the_post()
+ 
+ </pre> 
+ @return void</div></div>
+<div class="row-fluid"><div class="span12 well well-small">
+cms_meta_title:return current meta title
+ Here is an inline example:
+ <pre>
+ 
+  echo cms_meta_title();
+ 
+ </pre>
+ @return string</div></div>
+<div class="row-fluid"><div class="span12 well well-small">
+cms_meta_data:return current meta data
+ Here is an inline example:
+ <pre>
+ 
+  echo cms_meta_data();
+ 
+ </pre>
+ @return array</div></div>
+<div class="row-fluid"><div class="span12 well well-small">
+cms_get_seo_description:return current meta description
+ Here is an inline example:
+ <pre>
+ 
+  echo cms_get_seo_description();
+ 
+ </pre>
+ @return string</div></div>
+<div class="row-fluid"><div class="span12 well well-small">
+cms_get_post_title:return current tile
+ cms_get_seo_description:return current meta description
+ Here is an inline example:
+ <pre>
+ 
+  echo cms_get_post_title();
+ 
+ </pre>
+ @return string</div></div>
+<div class="row-fluid"><div class="span12 well well-small">
+cms_post_title:echo current tile
+ Here is an inline example:
+ <pre>
+ 
+ cms_post_title();
+ 
+ </pre>
+ @return void</div></div>
+<div class="row-fluid"><div class="span12 well well-small">
+cms_get_post_content:return the content 
+ Here is an inline example:
+ <pre>
+ 
+ echo cms_get_post_content(); 
+ 
+ </pre>
+ @return string</div></div>
+<div class="row-fluid"><div class="span12 well well-small">
+cms_get_post_excerpt: Get excerpt from string
+ 
+ @param String $str String to get an excerpt from
+ @param Integer $startPos Position int string to start excerpt from
+ @param Integer $maxLength Maximum length the excerpt may be
+
+ @return string</div></div>
+<div class="row-fluid"><div class="span12 well well-small">
+cms_post_content:check content if there is contact form inside the content and echo the content
+ Here is an inline example:
+ <pre>
+ 
+ echo cms_post_content(); 
+ 
+ </pre>
+ @return void</div></div>
+<div class="row-fluid"><div class="span12 well well-small">
+-   PREPARE PLACEHOLDER FOR SLIDER  -</div></div>
+<div class="row-fluid"><div class="span12 well well-small">
+cms_get_post_permalink: return the url slug of the page
+ Here is an inline example:
+ <pre>
+ 
+ echo cms_get_post_permalink(); 
+ 
+ </pre>
+ @return string</div></div>
+<div class="row-fluid"><div class="span12 well well-small">
+cms_get_post_link: return the full url of the page
+ Here is an inline example:
+ <pre>
+ 
+ echo cms_get_post_link(); 
+ 
+ </pre>
+ @return string</div></div>
+<div class="row-fluid"><div class="span12 well well-small">
+cms_permalink: echo the url slug of the page
+ Here is an inline example:
+ <pre>
+ 
+ echo cms_permalink(); 
+ 
+ </pre>
+ @return void</div></div>
+<div class="row-fluid"><div class="span12 well well-small">
+cms_get_baseurl: return the base URL
+ Here is an inline example:
+ <pre>
+ 
+ echo cms_get_baseurl(); 
+ 
+ </pre>
+ @return string</div></div>
+<div class="row-fluid"><div class="span12 well well-small">
+cms_reset_query: setting the global variables to its default value
+ Here is an inline example:
+ <pre>
+ 
+  cms_reset_query(); 
+ 
+ </pre>
+ @return void</div></div>
+<div class="row-fluid"><div class="span12 well well-small">
+cms_get_page_template: setting the global variables to its default value
+ Here is an inline example:
+ <pre>
+ 
+  echo cms_get_page_template($options = array());
+ 
+ </pre>
+ @return void</div></div>
+<div class="row-fluid"><div class="span12 well well-small">
+cms_get_menu: will return the header menu
+ Here is an inline example:
+ <pre>
+ 
+  $menu =  cms_get_menu(array('id' => id, 'name' => name)) ;
+ 
+ </pre>
+ @return array</div></div>
+<div class="row-fluid"><div class="span12 well well-small">
+sort_array: will sort array
+ Here is an inline example:
+ <pre>
+ 
+  $sorted_array = sort_array($rows,'sort_order','asc');
+ 
+ </pre>
+ @return array</div></div>
+<div class="row-fluid"><div class="span12 well well-small">
+get_system_option: will sort array desc or asc
+ Here is an inline example:
+ <pre>
+ 
+  $value = get_system_option(array('option_name' => option_name));
+ 
+ </pre>
+ @return array</div></div>
+<div class="row-fluid"><div class="span12 well well-small">
+cms_google_analytics_is_on: check if google analytics is on
+ Here is an inline example:
+ <pre>
+ 
+  if(cms_google_analytics_is_on()){}
+ 
+ </pre>
+ @return boolean</div></div>
+<div class="row-fluid"><div class="span12 well well-small">
+cms_google_analytics_code: echo google analytic code
+ Here is an inline example:
+ <pre>
+ 
+  cms_google_analytics_code();
+ 
+ </pre>
+ @return string</div></div>
+<div class="row-fluid"><div class="span12 well well-small">
+cms_check_contact_form_exist: echo google analytic code
+ Here is an inline example:
+ <pre>
+ 
+  if(cms_check_contact_form_exist($id)){}
+ 
+ </pre>
+ @return boolean</div></div>
+<div class="row-fluid"><div class="span12 well well-small">
+cms_replacement_form_code: echo google analytic code
+ Here is an inline example:
+ <pre>
+ 
+  echo cms_replacement_form_code($id);
+ 
+ </pre>
+ @return string</div></div>
+<div class="row-fluid"><div class="span12 well well-small">
+change_tags: change contact form tags to form input
+ Here is an inline example:
+ <pre>
+ $content = change_tags($data);
+ </pre>
+ @return string</div></div>
+<div class="row-fluid"><div class="span12 well well-small">
+get_addons: adding attributtes to input tags
+ Here is an inline example:
+ <pre>
+ 
+  $content = get_addons($data,$input);
+ 
+ </pre>
+ @return string</div></div>
+<div class="row-fluid"><div class="span12 well well-small">
+get_addons: adding attributtes to input tags
+ Here is an inline example:
+ <pre>
+ 
+  $content = get_options($data);
+ 
+ </pre>
+ @return string</div></div>
+<div class="row-fluid"><div class="span12 well well-small">
+get_check: adding attributtes and division in checkbox/radio inputs
+ Here is an inline example:
+ <pre>
+ 
+  $content = get_check($data,$kind);
+ 
+ </pre>
+ @return string</div></div>
+<div class="row-fluid"><div class="span12 well well-small">
+cms_get_convert_contact_forms: converts contact form short code to html form
+ Here is an inline example:
+ <pre>
+ 
+  $content = get_check($data,$kind);
+ 
+ </pre>
+ @return string</div></div>
+<div class="row-fluid"><div class="span12 well well-small">
+cms_get_author: will get author of current post
+ Here is an inline example:
+ <pre>
+ 
+  cms_get_author()
+ 
+ </pre> 
+ @return String</div></div>
+<div class="row-fluid"><div class="span12 well well-small">
+cms_get_languages: will get list of defined languages of the system
+ Here is an inline example:
+ <pre>
+ 
+  cms_get_languages()
+ 
+ </pre> 
+ @return void</div></div>
+<div class="row-fluid"><div class="span12 well well-small">
+cms_get_language: will get list of current defined languages of the system
+ Here is an inline example:
+ <pre>
+ 
+  cms_get_language()
+ 
+ </pre> 
+ @return void</div></div>
+<div class="row-fluid"><div class="span12 well well-small">
+cms_get_language_default: will get list of default languages of the system
+ Here is an inline example:
+ <pre>
+ 
+  cms_get_language_default()
+ 
+ </pre> 
+ @return void</div></div>
+<div class="row-fluid"><div class="span12 well well-small">
+cms_get_language_default: will get list of default languages of the system
+ Here is an inline example:
+ <pre>
+ 
+  cms_get_language_default()
+ 
+ </pre> 
+ @return void</div></div>
+<div class="row-fluid"><div class="span12 well well-small">
+cms_set_language: will set the value of `cms_current_language` and return boolean if the added language exist
+ Here is an inline example:
+ <pre>
+ 
+  cms_set_language()
+ 
+ </pre> 
+ @return boolean</div></div>

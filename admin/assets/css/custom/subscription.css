@@ -1,0 +1,14 @@
+.row-item-container > .span4{
+  margin-right: 20px;
+  margin-left: 0px;
+}
+.row-item-container > .span4:nth-child(3n){
+  margin-right: 0px;
+}
+.modal-subscription{
+  width: 1000px;
+  margin-left: -500px;
+}
+.modal-subscription.fade.in{
+  top: 10px;
+}

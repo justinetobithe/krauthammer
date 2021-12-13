@@ -1,0 +1,421 @@
+<div class="row-fluid"><div class="span12 well well-small">
+@var ecatalog_products_retrieved should be false, but it will be set to true if there are products found</div></div>
+<div class="row-fluid"><div class="span12 well well-small">
+@var ecatalog_products should be null if there are ecatalog_products_retrieved is false.</div></div>
+<div class="row-fluid"><div class="span12 well well-small">
+@var ecatalog_products should be false, but it will be set to true if there are products found</div></div>
+<div class="row-fluid"><div class="span12 well well-small">
+@var ecatalog_query_filter data passed will be array;</div></div>
+<div class="row-fluid"><div class="span12 well well-small">
+Query all the products in products table
+ Here is an inline example:
+ <pre>
+ &lt;?php
+  $products = ecatalog_query_products('url_slug='.$url);
+ ?>
+ </pre>
+ @return void</div></div>
+<div class="row-fluid"><div class="span12 well well-small">
+ecatalog_have_products will check if there are product existed or selected
+ Note: ecatalog_query_products should be called first
+ Here is an inline example:
+ <pre>
+ &lt;?php
+  ecatalog_query_products('url_slug=);
+  if(ecatalog_have_products()){}
+ ?>
+ </pre>
+ @return int</div></div>
+<div class="row-fluid"><div class="span12 well well-small">
+ecatalog_product_count will count the ecatalog_products array
+ Note: ecatalog_query_products should be called first
+ Here is an inline example:
+ <pre>
+ &lt;?php
+  ecatalog_query_products('url_slug=);
+  if(ecatalog_product_count() > 0){}
+ ?>
+ </pre>
+ @return void</div></div>
+<div class="row-fluid"><div class="span12 well well-small">
+ecatalog_the_product shift the array and give the ecatalog_current_product and product
+ Here is an inline example:
+ <pre>
+ &lt;?php
+  ecatalog_query_products('url_slug=);
+  if(ecatalog_product_count() > 0){
+   ecatalog_the_product(); 
+   }
+ ?>
+ </pre>
+ @return void</div></div>
+<div class="row-fluid"><div class="span12 well well-small">
+ecatalog_get_product_name will return the current product name
+ Note: ecatalog_query_products should be called first
+ Here is an inline example:
+ <pre>
+ &lt;?php
+  echo ecatalog_get_product_name();
+ ?>
+ </pre>
+ @return string | product name</div></div>
+<div class="row-fluid"><div class="span12 well well-small">
+ecatalog_meta_title will return the current product meta title
+ Note: ecatalog_query_products should be called first
+ Here is an inline example:
+ <pre>
+ &lt;?php
+  echo ecatalog_meta_title();
+ ?>
+ </pre>
+ @return string | meta title</div></div>
+<div class="row-fluid"><div class="span12 well well-small">
+ecatalog_meta_description will return the current product meta description
+ Note: ecatalog_query_products should be called first
+ Here is an inline example:
+ <pre>
+ &lt;?php
+  echo ecatalog_meta_description();
+ ?>
+ </pre>
+ @return string | meta description</div></div>
+<div class="row-fluid"><div class="span12 well well-small">
+ecatalog_product_name will return the current product meta description
+ Note: ecatalog_query_products should be called first
+ Here is an inline example:
+ <pre>
+ <html>
+  <p>&lt;?php ecatalog_product_name();?> </p>
+ </html>
+ </pre>
+ @return string | meta description</div></div>
+<div class="row-fluid"><div class="span12 well well-small">
+ecatalog_get_featured_image will return the current product featured image url
+ Note: ecatalog_query_products should be called first
+ Here is an inline example:
+ <pre>
+ &lt;?php
+  echo ecatalog_get_featured_image()
+ ?>
+ </pre>
+ @return string | featured image url</div></div>
+<div class="row-fluid"><div class="span12 well well-small">
+ecatalog_featured_image will echo the current product featured image url
+ Note: ecatalog_query_products should be called first
+ Here is an inline example:
+ <pre>
+ <html>
+  <image src="&lt;?php ecatalog_featured_image(); ?>" alt=""/>
+ </html>
+ </pre>
+ @return void</div></div>
+<div class="row-fluid"><div class="span12 well well-small">
+ecatalog_get_product_permalink will return the current product permanent link
+ Note: ecatalog_query_products should be called first
+ Here is an inline example:
+ <pre>
+ &lt;?php
+  echo ecatalog_get_product_permalink();
+ ?>
+ </pre>
+ @return string | current product permanent link</div></div>
+<div class="row-fluid"><div class="span12 well well-small">
+ecatalog_product_permalink will echo the current product permanent link
+ Note: ecatalog_query_products should be called first
+ Here is an inline example:
+ <pre>
+ <html>
+  <a href="&lt;?php ecatalog_product_permalink()?">Link</a>
+ </html>
+ </pre>
+ @return void</div></div>
+<div class="row-fluid"><div class="span12 well well-small">
+ecatalog_get_url_slug will return the current product url slug
+ Note: ecatalog_query_products should be called first
+ Here is an inline example:
+ <pre>
+ &lt;?php
+  echo ecatalog_get_url_slug();
+ ?>
+ </pre>
+ @return string | return the current product url slug</div></div>
+<div class="row-fluid"><div class="span12 well well-small">
+ecatalog_url_slug will echo the current product url slug
+ Note: ecatalog_query_products should be called first
+ Here is an inline example:
+ <pre>
+ <html
+  <a href="website.com/&lt;?php ecatalog_url_slug() ?>">Product Name</a>
+ <html>
+ </pre>
+ @return void</div></div>
+<div class="row-fluid"><div class="span12 well well-small">
+Get excerpt from string
+  
+  @param String $str String to get an excerpt from
+  @param Integer $startPos Position int string to start excerpt from
+  @param Integer $maxLength Maximum length the excerpt may be
+  @return String excerpt</div></div>
+<div class="row-fluid"><div class="span12 well well-small">
+ecatalog_get_product_detail will return the product detail depending on the parameter
+ Note: ecatalog_query_products should be called first
+ Here is an inline example:
+ <pre>
+ &lt;?php
+  echo ecatalog_get_product_detail();
+ ?>
+ </pre>
+ @return string | product name</div></div>
+<div class="row-fluid"><div class="span12 well well-small">
+ecatalog_get_products will query based on categories and id
+ Note: ecatalog_query_products should be called first
+ Here is an inline example:
+ <pre>
+ &lt;?php
+  $posts = ecatalog_get_products(array('id' => $product_id));
+ ?>
+ </pre>
+ @return array | Array of Objects Product</div></div>
+<div class="row-fluid"><div class="span12 well well-small">
+ecatalog_get_product will return product based on categories and id
+ Note: ecatalog_query_products should be called first
+ Here is an inline example:
+ <pre>
+ &lt;?php
+  $product = ecatalog_get_product($product_id);
+ ?>
+ </pre>
+ @return array | array current products</div></div>
+<div class="row-fluid"><div class="span12 well well-small">
+ecatalog_get_product_images will return based on product id
+ Note: ecatalog_query_products should be called first
+ Here is an inline example:
+ <pre>
+ &lt;?php
+  $product_images = ecatalog_get_product_images(array('product_id' => $id));
+ ?>
+ </pre>
+ @return array | array current products images</div></div>
+<div class="row-fluid"><div class="span12 well well-small">
+ecatalog_get_categories will return categories based on categories and product_id
+ Note: ecatalog_query_products should be called first
+ Here is an inline example:
+ <pre>
+ &lt;?php
+   $categories = ecatalog_get_categories();
+ ?>
+ </pre>
+ @return array | array categories</div></div>
+<div class="row-fluid"><div class="span12 well well-small">
+ecatalog_get_categories will return based on categories and product_id
+ Note: ecatalog_query_products should be called first
+ Here is an inline example:
+ <pre>
+ &lt;?php
+   $breadcrumb_categories = ecatalog_get_product_category_hierarchy($ecatalog_category['id']);
+ ?>
+ </pre>
+ @return array | array categories</div></div>
+<div class="row-fluid"><div class="span12 well well-small">
+ecatalog_get_product_category_link will query based on categories and product_id
+ Note: ecatalog_query_products should be called first
+ Here is an inline example:
+ <pre>
+ <html>
+   <a href="&lt;?php echo ecatalog_get_product_category_link($breadcrumb_category['id']); ?>" title="&lt;?php echo $breadcrumb_category['category_name']; ?>">Sample</a>
+ </html>
+ </pre>
+ @return array | array categories links</div></div>
+<div class="row-fluid"><div class="span12 well well-small">
+ecatalog_get_latest_products will return last 5 added products
+ Here is an inline example:
+ <pre>
+ &lt;?php
+     $latest_products = ecatalog_get_latest_products();
+ ?>
+ </pre>
+ @return array | array last 5 added products</div></div>
+<div class="row-fluid"><div class="span12 well well-small">
+ecatalog_get_related_products will return 3 latest related products based on category of the current product
+ Here is an inline example:
+ <pre>
+ &lt;?php
+      $related_products = ecatalog_get_related_products();
+ ?>
+ </pre>
+ @return array | 3 products</div></div>
+<div class="row-fluid"><div class="span12 well well-small">
+ecatalog_get_related_product_id will return 3 latest related products id based on the current product id
+ Here is an inline example:
+ <pre>
+ &lt;?php
+     $product_ids = ecatalog_get_related_product_id($ecatalog_current_product['id']);
+ ?>
+ </pre>
+ @return array | product ids</div></div>
+<div class="row-fluid"><div class="span12 well well-small">
+ecatalog_footer will print system option website_footer_copyright_text
+ how to use it:  ecatalog_footer();
+ @return array | product ids</div></div>
+<div class="row-fluid"><div class="span12 well well-small">
+ecatalog_get_product_tabs will return the product tabs for product description
+ Here is an inline example:
+ <pre>
+ <hmtl>
+      <span>&lt;?php ecatalog_footer(); ?></span>
+ </html>
+ </pre>
+ @return array | product tabs</div></div>
+<div class="row-fluid"><div class="span12 well well-small">
+ecatalog_get_product_tabs will return the product tabs for product description
+ Here is an inline example:
+ <pre>
+ <hmtl>
+      <span>&lt;?php ecatalog_get_product_custom_fields(); ?></span>
+ </html>
+ </pre>
+ @return array | product tabs</div></div>
+<div class="row-fluid"><div class="span12 well well-small">
+ecatalog_cart_add_product will add the product into the cart using sesssion
+ Here is an inline example:
+ <pre>
+ &lt;?php
+     ecatalog_cart_add_product($product,$quantity);
+ ?>
+ </pre>
+ @return void</div></div>
+<div class="row-fluid"><div class="span12 well well-small">
+ecatalog_cart_delete_product will delete the product into the cart using sesssion
+ Here is an inline example:
+ <pre>
+ &lt;?php
+     ecatalog_cart_delete_product($id);
+ ?>
+ </pre>
+ @return void</div></div>
+<div class="row-fluid"><div class="span12 well well-small">
+ecatalog_cart_get_products will return the product into the cart using sesssion
+ Here is an inline example:
+ <pre>
+ &lt;?php
+     foreach ($_SESSION['ecatalog_product_enquiry'] as $key => $product_obj) {}
+ ?>
+ </pre>
+ @return array | products in cart</div></div>
+<div class="row-fluid"><div class="span12 well well-small">
+ecatalog_cart_get_products will return the product into the cart using sesssion
+ Here is an inline example:
+ <pre>
+ &lt;?php
+     ecatalog_cart_clear_products();
+ ?>
+ </pre>
+ @return array | products in cart</div></div>
+<div class="row-fluid"><div class="span12 well well-small">
+get_product_order_display will return the product order query
+ Here is an inline example:
+ <pre>
+ &lt;?php
+     $order = get_product_order_display($order);
+     $qry = $db->query("SELECT  FROM `products` WHERE match(`product_name`) against ('$keyword') AND `product_status` = 'active' ".$order);
+ ?>
+ </pre>
+ @return string | query order</div></div>
+<div class="row-fluid"><div class="span12 well well-small">
+get_product_order_display will return the product order query
+ Here is an inline example:
+ <pre>
+ &lt;?php
+     $search_results = ecatalog_get_search_products($input,$order);
+ ?>
+ </pre>
+ @return string | query order</div></div>
+<div class="row-fluid"><div class="span12 well well-small">
+ecatalog_get_default_view will return the default view
+ Here is an inline example:
+ <pre>
+ &lt;?php
+      $default_view = ecatalog_get_default_view();
+ ?>
+ </pre>
+ @return string | default view</div></div>
+<div class="row-fluid"><div class="span12 well well-small">
+ecatalog_get_product_display_order will return the display order
+ ecatalog_get_default_view will return the default view
+ Here is an inline example:
+ <pre>
+ &lt;?php
+      $order = ecatalog_get_product_display_order('');
+ ?>
+ </pre>
+ @return string | display order</div></div>
+<div class="row-fluid"><div class="span12 well well-small">
+ecatalog_convert_to_option will return coverted display order
+ Here is an inline example:
+ <pre>
+ <html>
+     <a href="#" >&lt;?php echo ecatalog_convert_to_option(SESSION::get('order_type')); ?></a>
+ </html>
+ </pre>
+ @return string | coverted display order</div></div>
+<div class="row-fluid"><div class="span12 well well-small">
+ecatalog_highlight set session if new product is added to cart
+ Here is an inline example:
+ <pre>
+ &lt;?php
+     ecatalog_highlight();
+ ?>
+ </pre>
+ @return void</div></div>
+<div class="row-fluid"><div class="span12 well well-small">
+ecatalog_unhighlight unset session 
+ Here is an inline example:
+ <pre>
+ &lt;?php
+     ecatalog_unhighlight();
+ ?>
+ </pre>
+ @return void</div></div>
+<div class="row-fluid"><div class="span12 well well-small">
+ecatalog_add_contact_form_7 will add data based on submitted contact forms
+ Here is an inline example:
+ <pre>
+ &lt;?php
+     if(ecatalog_add_contact_form_7($form_data)){}
+ ?>
+ </pre>
+ @return boolean</div></div>
+<div class="row-fluid"><div class="span12 well well-small">
+Fetches text content of email template
+
+ @return string</div></div>
+<div class="row-fluid"><div class="span12 well well-small">
+Get order info by id
+
+ @param $id
+ @return array</div></div>
+<div class="row-fluid"><div class="span12 well well-small">
+Get order info by id
+
+ @param $id
+ @return array</div></div>
+<div class="row-fluid"><div class="span12 well well-small">
+Get payment info by id
+
+ @param int $id
+ @param string $key
+ @return mixed</div></div>
+<div class="row-fluid"><div class="span12 well well-small">
+Formats number into currency format with two decimal points
+
+ @param int $num
+ @return string</div></div>
+<div class="row-fluid"><div class="span12 well well-small">
+Get tax rate in percentage (decimal)
+
+ @return float</div></div>
+<div class="row-fluid"><div class="span12 well well-small">
+Sends order information via email to customer.
+
+ @param int $order_id
+ @return void</div></div>

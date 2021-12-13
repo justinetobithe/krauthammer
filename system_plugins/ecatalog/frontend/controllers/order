@@ -1,0 +1,39 @@
+<?php
+
+class Order extends Controller {
+
+	function __construct() {
+		parent::__construct();
+	}
+
+	function index($url = "") {
+		if (isPost('submit') && post('submit')) {
+			EcommerceManager::payment_process_save_method();
+			redirect(get_bloginfo('baseurl') . "order/confirmation/");
+		}
+	}
+
+	function confirmation() {
+		$selected_method_id = EcommerceManager::payment_process_get_method();
+		if ($selected_method_id == "") {
+			exit();
+		}
+		$selected_method = EcommerceManager::get_payment_getways( $selected_method_id );
+		$selected_method = array_pop($selected_method);
+
+		if (isPost('submit') && post('submit')) {
+			EcommerceManager::payment_process_order();
+		}else{
+			if ($selected_method['detail']->gateway_type == 'PAYPAL_EXPRESS') {
+				$_SESSION['paypal'] = true;
+				EcommerceManager::order_paypal_express_confirmation_layout();
+			}else{
+				EcommerceManager::order_confirmation_layout();
+			}
+		}
+	}
+
+	function success(){
+    EcommerceManager::order_page_success();
+	}
+}
